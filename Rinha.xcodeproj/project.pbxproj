@@ -11,6 +11,13 @@
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
 		41AEEE46282988F6000921EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE45282988F6000921EA /* Preview Assets.xcassets */; };
+		41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE4C2829F836000921EA /* Main-Menu-Soundtrack.mp3 */; };
+		41AEEE512829F943000921EA /* SFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE502829F943000921EA /* SFX.swift */; };
+		41AEEE532829FBBA000921EA /* Fish-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE522829FBBA000921EA /* Fish-Sound.mp3 */; };
+		41AEEE552829FBC3000921EA /* Meerkat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE542829FBC3000921EA /* Meerkat-Sound.mp3 */; };
+		41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */; };
+		41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */; };
+		41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41AEEE42282988F6000921EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AEEE45282988F6000921EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41AEEE4C2829F836000921EA /* Main-Menu-Soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Main-Menu-Soundtrack.mp3"; sourceTree = "<group>"; };
+		41AEEE502829F943000921EA /* SFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFX.swift; sourceTree = "<group>"; };
+		41AEEE522829FBBA000921EA /* Fish-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fish-Sound.mp3"; sourceTree = "<group>"; };
+		41AEEE542829FBC3000921EA /* Meerkat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Meerkat-Sound.mp3"; sourceTree = "<group>"; };
+		41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Llama-Sound.mp3"; sourceTree = "<group>"; };
+		41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rat-Sound.mp3"; sourceTree = "<group>"; };
+		41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cat-Sound.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		41AEEE3D282988F4000921EA /* Rinha */ = {
 			isa = PBXGroup;
 			children = (
+				41AEEE4F2829F92A000921EA /* Sounds */,
 				41AEEE3E282988F4000921EA /* RinhaApp.swift */,
 				41AEEE40282988F4000921EA /* ContentView.swift */,
 				41AEEE42282988F6000921EA /* Assets.xcassets */,
@@ -65,6 +80,28 @@
 				41AEEE45282988F6000921EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41AEEE4E2829F8BE000921EA /* MP3 Files */ = {
+			isa = PBXGroup;
+			children = (
+				41AEEE4C2829F836000921EA /* Main-Menu-Soundtrack.mp3 */,
+				41AEEE522829FBBA000921EA /* Fish-Sound.mp3 */,
+				41AEEE542829FBC3000921EA /* Meerkat-Sound.mp3 */,
+				41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */,
+				41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */,
+				41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */,
+			);
+			path = "MP3 Files";
+			sourceTree = "<group>";
+		};
+		41AEEE4F2829F92A000921EA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				41AEEE4E2829F8BE000921EA /* MP3 Files */,
+				41AEEE502829F943000921EA /* SFX.swift */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +162,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */,
 				41AEEE46282988F6000921EA /* Preview Assets.xcassets in Resources */,
+				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
+				41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */,
 				41AEEE43282988F6000921EA /* Assets.xcassets in Resources */,
+				41AEEE532829FBBA000921EA /* Fish-Sound.mp3 in Resources */,
+				41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */,
+				41AEEE552829FBC3000921EA /* Meerkat-Sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
 			);
