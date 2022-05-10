@@ -18,6 +18,10 @@
 		41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */; };
 		41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */; };
 		41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */; };
+		41AEEE602829FF89000921EA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE5F2829FF89000921EA /* Fonts.swift */; };
+		41AEEE622829FFE6000921EA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE612829FFE6000921EA /* Colors.swift */; };
+		41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE66282A016E000921EA /* 2. MainMenuView.swift */; };
+		41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,11 @@
 		41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Llama-Sound.mp3"; sourceTree = "<group>"; };
 		41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rat-Sound.mp3"; sourceTree = "<group>"; };
 		41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cat-Sound.mp3"; sourceTree = "<group>"; };
+		41AEEE5F2829FF89000921EA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		41AEEE612829FFE6000921EA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		41AEEE66282A016E000921EA /* 2. MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. MainMenuView.swift"; sourceTree = "<group>"; };
+		41AEEE68282A0385000921EA /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
+		41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. SplashScreenView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +58,8 @@
 		41AEEE32282988F4000921EA = {
 			isa = PBXGroup;
 			children = (
+				41AEEE632829FFEF000921EA /* Views  */,
+				41AEEE5E2829FF76000921EA /* Design System */,
 				41AEEE3D282988F4000921EA /* Rinha */,
 				41AEEE3C282988F4000921EA /* Products */,
 			);
@@ -102,6 +113,25 @@
 				41AEEE502829F943000921EA /* SFX.swift */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		41AEEE5E2829FF76000921EA /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				41AEEE68282A0385000921EA /* PressStart2P.ttf */,
+				41AEEE5F2829FF89000921EA /* Fonts.swift */,
+				41AEEE612829FFE6000921EA /* Colors.swift */,
+			);
+			path = "Design System";
+			sourceTree = "<group>";
+		};
+		41AEEE632829FFEF000921EA /* Views  */ = {
+			isa = PBXGroup;
+			children = (
+				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
+				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
+			);
+			path = "Views ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
+				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
+				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
+				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
 			);
