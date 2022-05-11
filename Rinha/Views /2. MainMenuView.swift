@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MainMenuView: View {
     var body: some View {
-        ZStack {
-            Image("Background-Main")
+        ZStack(alignment: .center) {
+            Image("Background-Big")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
         }
