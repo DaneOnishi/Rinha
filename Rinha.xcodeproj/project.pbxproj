@@ -10,6 +10,8 @@
 		0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */; };
 		0EE4BF10282AF705003BF45E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE4BF0F282AF705003BF45E /* ACarousel */; };
 		0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF11282C2726003BF45E /* ButtonStyle.swift */; };
+		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
+		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
@@ -21,11 +23,17 @@
 		41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */; };
 		41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */; };
 		41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */; };
+		41AEEE602829FF89000921EA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE5F2829FF89000921EA /* Fonts.swift */; };
+		41AEEE622829FFE6000921EA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE612829FFE6000921EA /* Colors.swift */; };
+		41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE66282A016E000921EA /* 2. MainMenuView.swift */; };
+		41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFighterView.swift; sourceTree = "<group>"; };
 		0EE4BF11282C2726003BF45E /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
+		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEEE3E282988F4000921EA /* RinhaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinhaApp.swift; sourceTree = "<group>"; };
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +46,11 @@
 		41AEEE562829FBCC000921EA /* Llama-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Llama-Sound.mp3"; sourceTree = "<group>"; };
 		41AEEE582829FBD3000921EA /* Rat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rat-Sound.mp3"; sourceTree = "<group>"; };
 		41AEEE5A2829FBDD000921EA /* Cat-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cat-Sound.mp3"; sourceTree = "<group>"; };
+		41AEEE5F2829FF89000921EA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		41AEEE612829FFE6000921EA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		41AEEE66282A016E000921EA /* 2. MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. MainMenuView.swift"; sourceTree = "<group>"; };
+		41AEEE68282A0385000921EA /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
+		41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. SplashScreenView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +82,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		4101455A282B5C0700268C53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4101455B282B5C5600268C53 /* AnimatedText+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		41AEEE32282988F4000921EA = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				0EE4BF0B282AF5C8003BF45E /* Views */,
+				4101455A282B5C0700268C53 /* Extensions */,
+				41AEEE632829FFEF000921EA /* Views  */,
+				41AEEE5E2829FF76000921EA /* Design System */,
 				41AEEE4F2829F92A000921EA /* Sounds */,
 				41AEEE3E282988F4000921EA /* RinhaApp.swift */,
 				41AEEE40282988F4000921EA /* ContentView.swift */,
@@ -126,6 +150,26 @@
 				41AEEE502829F943000921EA /* SFX.swift */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		41AEEE5E2829FF76000921EA /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				41AEEE68282A0385000921EA /* PressStart2P.ttf */,
+				41AEEE5F2829FF89000921EA /* Fonts.swift */,
+				41AEEE612829FFE6000921EA /* Colors.swift */,
+			);
+			path = "Design System";
+			sourceTree = "<group>";
+		};
+		41AEEE632829FFEF000921EA /* Views  */ = {
+			isa = PBXGroup;
+			children = (
+				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
+				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
+				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
+			);
+			path = "Views ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
+				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
+				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
+				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
+				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
+				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
