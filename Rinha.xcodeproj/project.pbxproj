@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
+		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
+		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEEE3E282988F4000921EA /* RinhaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinhaApp.swift; sourceTree = "<group>"; };
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,11 +59,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4101455A282B5C0700268C53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4101455B282B5C5600268C53 /* AnimatedText+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		41AEEE32282988F4000921EA = {
 			isa = PBXGroup;
 			children = (
-				41AEEE632829FFEF000921EA /* Views  */,
-				41AEEE5E2829FF76000921EA /* Design System */,
 				41AEEE3D282988F4000921EA /* Rinha */,
 				41AEEE3C282988F4000921EA /* Products */,
 			);
@@ -76,6 +86,9 @@
 		41AEEE3D282988F4000921EA /* Rinha */ = {
 			isa = PBXGroup;
 			children = (
+				4101455A282B5C0700268C53 /* Extensions */,
+				41AEEE632829FFEF000921EA /* Views  */,
+				41AEEE5E2829FF76000921EA /* Design System */,
 				41AEEE4F2829F92A000921EA /* Sounds */,
 				41AEEE3E282988F4000921EA /* RinhaApp.swift */,
 				41AEEE40282988F4000921EA /* ContentView.swift */,
@@ -130,6 +143,7 @@
 			children = (
 				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
 				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
+				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
 			);
 			path = "Views ";
 			sourceTree = "<group>";
@@ -211,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
+				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
+				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
