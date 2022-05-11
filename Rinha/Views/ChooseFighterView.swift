@@ -12,7 +12,7 @@ struct Item: Identifiable {
     let id = UUID()
     let image: Image
 }
-let roles = ["rato5", "rato1", "rato2", "rato3", "rato4"]
+let roles = ["rato5", "rato1", "rato1", "rato3", "rato4"]
 
 struct ChooseFighterView: View {
 
@@ -24,20 +24,21 @@ struct ChooseFighterView: View {
         ZStack {
             Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
+
             VStack {
                 ZStack {
                  Image("Big-Character-Circle")
                         .resizable()
-                        .frame(width: 345, height: 345)
+                        .frame(width: 325, height: 325)
                         .clipShape(Circle())
                     Image(roles[currentIndex])
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 233, height: 233, alignment: .bottom)
+                    .frame(width: 219, height: 219, alignment: .bottom)
                     .clipShape(Circle())
-                    .offset(y: 21)
+                    .offset(y: 19)
                 }
-                
+                .padding(.top, 40)
                 
                ACarousel(roles, id: \.self,
                          index: $currentIndex, headspace: 120,
@@ -56,12 +57,16 @@ struct ChooseFighterView: View {
                            }
                            .frame(height: 138)
                }
-                Spacer()
+
                 ButtonStyle()
+                
+                Spacer()
+                    .frame(height: 60)
 
             }
-    
-
+            .padding([.top], 50)
+            
+            Background(text: "Choose your Fighter", textSize: 14)
         }
 
     }

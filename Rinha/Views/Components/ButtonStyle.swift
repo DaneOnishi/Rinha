@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ButtonStyle: View {
+    @State var text = "Continue"
     var body: some View {
         Button(action: {
             print("Button pressed!")
@@ -15,10 +16,13 @@ struct ButtonStyle: View {
             Image("Button")
                 .resizable()
                 .scaledToFill()
-                .padding([.leading, .trailing], 16)
+                .frame(minWidth: 260, minHeight: 100)
+                .padding(50)
+                .overlay(ImageOverlay(text: text), alignment: .center)
         }
         .frame(height: 124)
     }
+    
     
 }
 

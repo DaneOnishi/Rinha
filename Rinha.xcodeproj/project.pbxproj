@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E20109B282C3974009732F9 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20109A282C3974009732F9 /* Background.swift */; };
+		0E20109E282C41FC009732F9 /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E20109D282C41FC009732F9 /* PressStart2P.ttf */; };
+		0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20109F282C4AC5009732F9 /* ImageOverlay.swift */; };
 		0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */; };
 		0EE4BF10282AF705003BF45E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE4BF0F282AF705003BF45E /* ACarousel */; };
 		0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF11282C2726003BF45E /* ButtonStyle.swift */; };
@@ -30,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E20109A282C3974009732F9 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		0E20109C282C4185009732F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E20109D282C41FC009732F9 /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PressStart2P.ttf; path = ../../../.Trash/PressStart2P.ttf; sourceTree = "<group>"; };
+		0E20109F282C4AC5009732F9 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFighterView.swift; sourceTree = "<group>"; };
 		0EE4BF11282C2726003BF45E /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
@@ -49,7 +56,6 @@
 		41AEEE5F2829FF89000921EA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		41AEEE612829FFE6000921EA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		41AEEE66282A016E000921EA /* 2. MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. MainMenuView.swift"; sourceTree = "<group>"; };
-		41AEEE68282A0385000921EA /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
 		41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. SplashScreenView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				0EE4BF11282C2726003BF45E /* ButtonStyle.swift */,
+				0E20109A282C3974009732F9 /* Background.swift */,
+				0E20109F282C4AC5009732F9 /* ImageOverlay.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 		41AEEE3D282988F4000921EA /* Rinha */ = {
 			isa = PBXGroup;
 			children = (
+				0E20109C282C4185009732F9 /* Info.plist */,
 				0EE4BF0B282AF5C8003BF45E /* Views */,
 				4101455A282B5C0700268C53 /* Extensions */,
 				41AEEE632829FFEF000921EA /* Views  */,
@@ -155,7 +164,7 @@
 		41AEEE5E2829FF76000921EA /* Design System */ = {
 			isa = PBXGroup;
 			children = (
-				41AEEE68282A0385000921EA /* PressStart2P.ttf */,
+				0E20109D282C41FC009732F9 /* PressStart2P.ttf */,
 				41AEEE5F2829FF89000921EA /* Fonts.swift */,
 				41AEEE612829FFE6000921EA /* Colors.swift */,
 			);
@@ -236,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E20109E282C41FC009732F9 /* PressStart2P.ttf in Resources */,
 				41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */,
 				41AEEE46282988F6000921EA /* Preview Assets.xcassets in Resources */,
 				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
@@ -258,6 +268,7 @@
 				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
 				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
+				0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
@@ -265,6 +276,7 @@
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
 				0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */,
+				0E20109B282C3974009732F9 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +408,7 @@
 				DEVELOPMENT_TEAM = U77829B9P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rinha/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,6 +438,7 @@
 				DEVELOPMENT_TEAM = U77829B9P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rinha/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
