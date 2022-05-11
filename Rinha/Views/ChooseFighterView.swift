@@ -6,70 +6,69 @@
 //
 
 import SwiftUI
+import ACarousel
+
+struct Item: Identifiable {
+    let id = UUID()
+    let image: Image
+}
+let roles = ["rato5", "rato1", "rato2", "rato3", "rato4"]
 
 struct ChooseFighterView: View {
-    @State private var index = 0
-       var body: some View {
-           VStack{
-               TabView(selection: $index) {
-                   ForEach((0..<3), id: \.self) { index in
-                       CardView()
-                   }
-               }
-               .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-               HStack(spacing: 2) {
-                   ForEach((0..<3), id: \.self) { index in
-                       Circle()
-                           .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
-                           .frame(width: 20, height: 20)
 
-                   }
-               }
-               .padding()
-               
-               HStack(spacing: 2) {
-                   ForEach((0..<3), id: \.self) { index in
-                       Rectangle()
-                           .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
-                           .frame(width: 20, height: 20)
+    let items: [Item] = roles.map { Item(image: Image($0)) }
+    @State var currentIndex: Int = 0
+    
+    var body: some View {
 
-                   }
+        ZStack {
+            Color("BackgroundColor")
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                ZStack {
+                 Image("Big-Character-Circle")
+                        .resizable()
+                        .frame(width: 345, height: 345)
+                        .clipShape(Circle())
+                    Image(roles[currentIndex])
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 233, height: 233, alignment: .bottom)
+                    .clipShape(Circle())
+                    .offset(y: 21)
+                }
+                
+                
+               ACarousel(roles, id: \.self,
+                         index: $currentIndex, headspace: 120,
+                         sidesScaling: 0.98) { name in
+                           ZStack {
+                            Image("Small-Chracter-Circle")
+                                   .resizable()
+                                   .frame(width: 138, height: 138)
+                                   .clipShape(Circle())
+                               Image(name)
+                               .resizable()
+                               .scaledToFill()
+                               .frame(width: 87, height: 87, alignment: .bottom)
+                               .clipShape(Circle())
+                               .offset(y: 7)
+                           }
+                           .frame(height: 138)
                }
-               .padding()
-               
-               HStack(spacing: 2) {
-                   ForEach((0..<3), id: \.self) { index in
-                       Rectangle()
-                           .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
-                           .frame(width: 30, height: 5)
+                Spacer()
+                ButtonStyle()
 
-                   }
-               }
-               .padding()
-               
-               HStack(spacing: 2) {
-                   ForEach((0..<3), id: \.self) { index in
-                       Rectangle()
-                           .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
-                           .frame(height: 5)
-                   }
-               }
-               .padding()
-           }
-           .frame(height: 200)
-       }
-   }
+            }
+    
 
+        }
 
-struct CardView: View{
-   var body: some View{
-       Rectangle()
-           .fill(Color.pink)
-           .frame(height: 200)
-           .border(Color.black)
-           .padding()
-   }
+    }
+
 }
+
+
 
 struct ChooseFighterView_Previews: PreviewProvider {
     static var previews: some View {

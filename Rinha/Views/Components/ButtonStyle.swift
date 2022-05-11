@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct Button: View {
+struct ButtonStyle: View {
     var body: some View {
         Button(action: {
             print("Button pressed!")
         }) {
-            
             Image("Button")
                 .resizable()
                 .scaledToFill()
@@ -26,6 +25,6 @@ struct Button: View {
 
 struct ButtonStyle_Previews: PreviewProvider {
     static var previews: some View {
-        Button()
+        ButtonStyle()
     }
 }
