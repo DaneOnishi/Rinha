@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "Back-Button.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Second-Screen-Circle.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
