@@ -18,7 +18,7 @@ struct ButtonStyle: View {
                 .scaledToFill()
                 .frame(minWidth: 260, minHeight: 100)
                 .padding(50)
-                .overlay(ImageOverlay(text: text), alignment: .center)
+                .overlay(ImageOverlay(text: text, color: "WhiteFontColor"), alignment: .center)
         }
         .frame(height: 124)
     }

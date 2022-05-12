@@ -19,7 +19,7 @@ struct Background: View {
                 .allowsHitTesting(false)
             
             ImageOverlay(text: text ,textSize: textSize)
-                .frame(maxWidth: 210, minHeight: 75, alignment: .center)
+                .frame(maxWidth: 210, minHeight: 70, alignment: .center)
         }
     }
 }

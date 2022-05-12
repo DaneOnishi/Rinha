@@ -10,11 +10,12 @@ import SwiftUI
 struct ImageOverlay: View {
     var text : String
     var textSize : CGFloat = 16
+    var color : String = "BackgroundColor"
     
     var body: some View {
         Text(text)
             .padding(6)
-            .foregroundColor(Color("BackgroundColor"))
+            .foregroundColor(Color(color))
             .font(.custom("PressStart2P", size: textSize))
             .multilineTextAlignment(.center)
     }
