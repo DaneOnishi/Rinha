@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct Back_Button: View {
+struct BackButton: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("Back-Button")
+            .resizable()
     }
 }
 
-struct Back_Button_Previews: PreviewProvider {
+struct BackButton_Previews: PreviewProvider {
     static var previews: some View {
-        Back_Button()
+        BackButton()
     }
 }
