@@ -55,8 +55,29 @@ class SFXMusicSingleton: NSObject, AVAudioPlayerDelegate {
         }
     }
     
+    func playMusic(soundFileName: String, loop: Bool) {
+        
+        guard let bundle = Bundle.main.path(forResource: soundFileName, ofType: "mp3")
+        else{ return }
+        
+        let soundFileNameURL = URL(fileURLWithPath: bundle)
+        if let player = players[soundFileNameURL] {
+            player.play()
+        } else {
+            do {
+                let player = try AVAudioPlayer(contentsOf: soundFileNameURL)
+                players[soundFileNameURL] = player
+                player.prepareToPlay()
+                player.play()
+                player.numberOfLoops = loop ? -1 : 0
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     func playMenuMusic() {
-       playSound(soundFileName: "Main-Menu-Soundtrack", loop: true)
+        playMusic(soundFileName: "Main-Menu-Soundtrack", loop: true)
     }
     
     func playRatSound() {
@@ -79,10 +100,14 @@ class SFXMusicSingleton: NSObject, AVAudioPlayerDelegate {
         playSound(soundFileName: "Meerkat-Sound", loop: false)
     }
     
-    func pauseMusic() {
-        guard let bundle = Bundle.main.path(forResource: "TrilhaWor", ofType: "mp3")
+    func pauseMusic(soundFileName: String) {
+        guard let bundle = Bundle.main.path(forResource: soundFileName, ofType: "mp3")
         else{ return }
         let soundFileNameURL = URL(fileURLWithPath: bundle)
         players[soundFileNameURL]?.stop()
+    }
+    
+    func pauseMenuMusic() {
+        pauseMusic(soundFileName: "Main-Menu-Soundtrack")
     }
 }
