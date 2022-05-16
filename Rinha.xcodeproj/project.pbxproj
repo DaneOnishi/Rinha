@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
 		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
+		4137A2282832D18600AEB704 /* 4.SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 4.SetMatchView.swift */; };
 		419082A3282F4CB200D1771E /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* InformationView.swift */; };
 		419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A4282F4CEE00D1771E /* SettingsView.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
@@ -26,11 +27,13 @@
 		41AEEE622829FFE6000921EA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE612829FFE6000921EA /* Colors.swift */; };
 		41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE66282A016E000921EA /* 2. MainMenuView.swift */; };
 		41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */; };
+		41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA2A2832E18200F5A82C /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
 		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
+		4137A2272832D18600AEB704 /* 4.SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.SetMatchView.swift; sourceTree = "<group>"; };
 		419082A2282F4CB200D1771E /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		419082A4282F4CEE00D1771E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +53,7 @@
 		41AEEE66282A016E000921EA /* 2. MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. MainMenuView.swift"; sourceTree = "<group>"; };
 		41AEEE68282A0385000921EA /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
 		41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. SplashScreenView.swift"; sourceTree = "<group>"; };
+		41B0DA2A2832E18200F5A82C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,10 +152,20 @@
 				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
 				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
 				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
+				4137A2272832D18600AEB704 /* 4.SetMatchView.swift */,
 				419082A2282F4CB200D1771E /* InformationView.swift */,
 				419082A4282F4CEE00D1771E /* SettingsView.swift */,
+				41B0DA292832E15400F5A82C /* Components  */,
 			);
 			path = "Views ";
+			sourceTree = "<group>";
+		};
+		41B0DA292832E15400F5A82C /* Components  */ = {
+			isa = PBXGroup;
+			children = (
+				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
+			);
+			path = "Components ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +249,13 @@
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
 				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
+				4137A2282832D18600AEB704 /* 4.SetMatchView.swift in Sources */,
 				419082A3282F4CB200D1771E /* InformationView.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
+				41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */,
 				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
