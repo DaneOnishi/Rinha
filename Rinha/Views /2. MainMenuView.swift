@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVFoundation
+import SpriteKit
 
 struct MainMenuView: View {
     @State private var startGame = false
@@ -15,62 +16,91 @@ struct MainMenuView: View {
     @State private var showSettings = false
     
     let music =  SFXMusicSingleton.shared
-
+    
     var body: some View {
         NavigationView {
             ZStack(alignment: .center) {
                 Image("Background-2")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
+                
                 VStack {
-                    Button {
-                        startGame.toggle()
-                    } label: {
-                        Image("Start-Button")
-                            .resizable()
-                            .frame(width: 75, height: 75, alignment: .center)
-                    }.padding(-37)
-                    
-                    HStack {
-                        Button {
-                            showInfo.toggle()
-                        } label: {
-                            Image("Details-Button")
-                                .resizable()
-                                .frame(width: 75, height: 75, alignment: .center)
+                    SpriteView(scene: DojoView.buildScene(actionPerformed: { action, scene in
+                        switch action {
+                        case .start:
+                            startGame = true
+                        case .sound:
+                            if isMusicRunning {
+                                music.pauseMenuMusic()
+                                scene.changeSoundButtonImage(to: "No-Sound-Button")
+                            } else {
+                                music.playMenuMusic()
+                                scene.changeSoundButtonImage(to: "Sound-Button")
+                            }
+                            isMusicRunning.toggle()
+                            
+                            
+                            
+                        case .info:
+                            showInfo = true
+                        case .settings:
+                            showSettings = true
                         }
-                        
-                        Button {
-                            showSettings.toggle()
-                        } label: {
-                            Image("Details-Button")
-                                .resizable()
-                                .frame(width: 75, height: 75, alignment: .center)
-                        }
-                    }.padding(-3)
+                    }), options: [.allowsTransparency])
+                    .background(Color.clear)
                     
-                    Button {
-                        if isMusicRunning {
-                            music.pauseMenuMusic()
-                         } else {
-                             music.playMenuMusic()
-                         }
-                        
-                        isMusicRunning.toggle()
-                    } label: {
-                        if isMusicRunning {
-                            Image("No-Sound-Button")
-                                .resizable()
-                                .frame(width: 75, height: 75, alignment: .center)
-                        } else {
-                            Image("Sound-Button")
-                                .resizable()
-                                .frame(width: 75, height: 75, alignment: .center)
-                        }
-                       
-                    }.padding(-37)
-                    
-                    
+                }//.frame(width: 385/1.5, height: 470/1.5, alignment: .center)
+                
+                
+                VStack {
+                    //                    Button {
+                    //                        startGame.toggle()
+                    //                    } label: {
+                    //                        Image("Start-Button")
+                    //                            .resizable()
+                    //                            .frame(width: 75, height: 75, alignment: .center)
+                    //                    }.padding(-37)
+                    //
+                    //                    HStack {
+                    //                        Button {
+                    //                            showInfo.toggle()
+                    //                        } label: {
+                    //                            Image("Details-Button")
+                    //                                .resizable()
+                    //                                .frame(width: 75, height: 75, alignment: .center)
+                    //                        }
+                    //
+                    //                        Button {
+                    //                            showSettings.toggle()
+                    //                        } label: {
+                    //                            Image("Details-Button")
+                    //                                .resizable()
+                    //                                .frame(width: 75, height: 75, alignment: .center)
+                    //                        }
+                    //                    }.padding(-3)
+                    //
+                    //                    Button {
+                    //                        if isMusicRunning {
+                    //                            music.pauseMenuMusic()
+                    //                         } else {
+                    //                             music.playMenuMusic()
+                    //                         }
+                    //
+                    //                        isMusicRunning.toggle()
+                    //                    } label: {
+                    //                        if isMusicRunning {
+                    //                            Image("No-Sound-Button")
+                    //                                .resizable()
+                    //                                .frame(width: 75, height: 75, alignment: .center)
+                    //                        } else {
+                    //                            Image("Sound-Button")
+                    //                                .resizable()
+                    //                                .frame(width: 75, height: 75, alignment: .center)
+                    //                        }
+                    //
+                    //                    }.padding(-37)
+                    //
+                    //
                     NavigationLink(isActive: $startGame) {
                         __ConnectingTableView()
                     } label: {
@@ -91,8 +121,8 @@ struct MainMenuView: View {
                 }
             }.onAppear{
                 
-                    music.playMenuMusic()
-               
+                music.playMenuMusic()
+                
             }
         }
     }

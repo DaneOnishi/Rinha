@@ -28,6 +28,9 @@
 		41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE66282A016E000921EA /* 2. MainMenuView.swift */; };
 		41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */; };
 		41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA2A2832E18200F5A82C /* MainButton.swift */; };
+		41B0DA2D283326DF00F5A82C /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA2C283326DF00F5A82C /* AnimationView.swift */; };
+		41B0DA302833422000F5A82C /* DojoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA2F2833422000F5A82C /* DojoView.swift */; };
+		41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B0DA312833433C00F5A82C /* DojoScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		41AEEE68282A0385000921EA /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
 		41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. SplashScreenView.swift"; sourceTree = "<group>"; };
 		41B0DA2A2832E18200F5A82C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		41B0DA2C283326DF00F5A82C /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		41B0DA2F2833422000F5A82C /* DojoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DojoView.swift; sourceTree = "<group>"; };
+		41B0DA312833433C00F5A82C /* DojoScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DojoScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,8 @@
 				419082A2282F4CB200D1771E /* InformationView.swift */,
 				419082A4282F4CEE00D1771E /* SettingsView.swift */,
 				41B0DA292832E15400F5A82C /* Components  */,
+				41B0DA2F2833422000F5A82C /* DojoView.swift */,
+				41B0DA312833433C00F5A82C /* DojoScene.sks */,
 			);
 			path = "Views ";
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 		41B0DA292832E15400F5A82C /* Components  */ = {
 			isa = PBXGroup;
 			children = (
+				41B0DA2C283326DF00F5A82C /* AnimationView.swift */,
 				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
 			);
 			path = "Components ";
@@ -231,6 +240,7 @@
 				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
 				41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */,
 				41AEEE43282988F6000921EA /* Assets.xcassets in Resources */,
+				41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */,
 				41AEEE532829FBBA000921EA /* Fish-Sound.mp3 in Resources */,
 				41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */,
 				41AEEE552829FBC3000921EA /* Meerkat-Sound.mp3 in Resources */,
@@ -245,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
+				41B0DA302833422000F5A82C /* DojoView.swift in Sources */,
 				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
 				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
@@ -255,6 +266,7 @@
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
+				41B0DA2D283326DF00F5A82C /* AnimationView.swift in Sources */,
 				41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */,
 				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 			);

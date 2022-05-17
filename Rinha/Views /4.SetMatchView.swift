@@ -12,7 +12,7 @@ struct __SetMatchView: View {
     @State private var isHostButtonPressed = false
     @State private var isJoinButtonPressed = false
     @State private var isWatchMatchButtonPressed = false
-   
+    @State var state: MatchState
 
     var body: some View {
         ZStack {
@@ -21,13 +21,13 @@ struct __SetMatchView: View {
                 .edgesIgnoringSafeArea(.all)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
              
-            VStack {
-                SimpleAnimatedText("Blob has already started match", charDuration: 0.6, modifier: {
+            VStack(spacing: 20) {
+                SimpleAnimatedText(state.switchTitle, charDuration: 0.3, modifier: {
                     text in text .foregroundColor(.gray)
                         .font(.system(size: 12, weight: .bold, design: .rounded))
                 })
                     
-                
+              
                 .padding(10)
                 
                 Image("Circle")
@@ -43,7 +43,7 @@ struct __SetMatchView: View {
                         .frame(width: 250, height: 90, alignment: .center)
                 }
                 
-                MainButton(text: "Thiago Onishi") {
+                MainButton(text: state.switchButtonTitle) {
                     print("Ravier")
                 }
                 .frame(width: 250)
@@ -54,7 +54,7 @@ struct __SetMatchView: View {
 
 struct __SetMatchView_Previews: PreviewProvider {
     static var previews: some View {
-        __SetMatchView()
+        __SetMatchView(state: .noPlayer)
     }
 }
 
@@ -80,11 +80,11 @@ enum MatchState {
     var switchButtonTitle: String {
         switch self {
         case .noPlayer:
-            return ""
+            return "Host"
         case .onePlayer:
-            return ""
+            return "Defy User"
         case .twoPlayer:
-            return ""
+            return "U can't"
         }
     }
     
