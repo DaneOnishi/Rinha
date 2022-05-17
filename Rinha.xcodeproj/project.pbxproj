@@ -31,6 +31,8 @@
 		41B0DA2D283326DF00F5A82C /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA2C283326DF00F5A82C /* AnimationView.swift */; };
 		41B0DA302833422000F5A82C /* DojoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA2F2833422000F5A82C /* DojoView.swift */; };
 		41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B0DA312833433C00F5A82C /* DojoScene.sks */; };
+		41B0DA342833D84400F5A82C /* Doors.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B0DA332833D84400F5A82C /* Doors.sks */; };
+		41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		41B0DA2C283326DF00F5A82C /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		41B0DA2F2833422000F5A82C /* DojoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DojoView.swift; sourceTree = "<group>"; };
 		41B0DA312833433C00F5A82C /* DojoScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DojoScene.sks; sourceTree = "<group>"; };
+		41B0DA332833D84400F5A82C /* Doors.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Doors.sks; sourceTree = "<group>"; };
+		41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 				41B0DA292832E15400F5A82C /* Components  */,
 				41B0DA2F2833422000F5A82C /* DojoView.swift */,
 				41B0DA312833433C00F5A82C /* DojoScene.sks */,
+				41B0DA332833D84400F5A82C /* Doors.sks */,
 			);
 			path = "Views ";
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				41B0DA2C283326DF00F5A82C /* AnimationView.swift */,
 				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
+				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
 			);
 			path = "Components ";
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */,
 				41AEEE46282988F6000921EA /* Preview Assets.xcassets in Resources */,
 				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
+				41B0DA342833D84400F5A82C /* Doors.sks in Resources */,
 				41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */,
 				41AEEE43282988F6000921EA /* Assets.xcassets in Resources */,
 				41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */,
@@ -260,6 +267,7 @@
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
 				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
+				41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */,
 				4137A2282832D18600AEB704 /* 4.SetMatchView.swift in Sources */,
 				419082A3282F4CB200D1771E /* InformationView.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
