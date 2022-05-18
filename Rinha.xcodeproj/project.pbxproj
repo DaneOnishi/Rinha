@@ -19,6 +19,8 @@
 		0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */; };
 		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
 		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
+		419082A3282F4CB200D1771E /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* InformationView.swift */; };
+		419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A4282F4CEE00D1771E /* SettingsView.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledBezier.swift; sourceTree = "<group>"; };
 		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
 		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
+		419082A2282F4CB200D1771E /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		419082A4282F4CEE00D1771E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEEE3E282988F4000921EA /* RinhaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinhaApp.swift; sourceTree = "<group>"; };
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
 				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
 				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
+				419082A2282F4CB200D1771E /* InformationView.swift */,
+				419082A4282F4CEE00D1771E /* SettingsView.swift */,
 			);
 			path = "Views ";
 			sourceTree = "<group>";
@@ -284,12 +290,14 @@
 				0EEE3106282D96DB00FCF95A /* MatchView.swift in Sources */,
 				0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
+				419082A3282F4CB200D1771E /* InformationView.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				0EEE310A282DC2B700FCF95A /* TeamSelectionView.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
+				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
 				0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */,
 				0E20109B282C3974009732F9 /* Background.swift in Sources */,
