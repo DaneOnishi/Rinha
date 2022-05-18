@@ -9,8 +9,12 @@ import SwiftUI
 
 struct BackButton: View {
     var body: some View {
-        Image("Back-Button")
-            .resizable()
+        Button(action: {
+            print("Button pressed!")
+        }) {
+            Image("Back-Button")
+                .resizable()
+        }
     }
 }
 

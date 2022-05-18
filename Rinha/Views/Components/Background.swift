@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Background: View {
     var text : String
-    var textSize : CGFloat = 16
-    
+    var textSize : CGFloat = 14
+
     var body: some View {
         ZStack (alignment: .top) {
             Image("Background-Frame")
@@ -18,8 +18,10 @@ struct Background: View {
                 .edgesIgnoringSafeArea(.all)
                 .allowsHitTesting(false)
             
+
+            
             ImageOverlay(text: text ,textSize: textSize)
-                .frame(maxWidth: 210, minHeight: 70, alignment: .center)
+                .frame(maxWidth: 210, minHeight: 70, alignment: .top)
         }
     }
 }
@@ -28,6 +30,6 @@ struct Background: View {
 struct Background_Previews: PreviewProvider {
 
     static var previews: some View {
-        Background(text: "dbshjbbadshsbk")
+        Background(text: "dbshjbbadshsbk asdadsasdasd sad")
     }
 }

@@ -67,6 +67,14 @@ struct ChooseFighterView: View {
             .padding([.top], 50)
             
             Background(text: "Choose your Fighter", textSize: 14)
+            VStack{
+                Spacer()
+                HStack() {
+                    BackButton().frame(width: 50, height: 50)
+                        .offset(x: 17, y: 10)
+                    Spacer()
+                }
+            }
         }
 
     }
