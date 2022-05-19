@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		0E20109B282C3974009732F9 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20109A282C3974009732F9 /* Background.swift */; };
 		0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20109F282C4AC5009732F9 /* ImageOverlay.swift */; };
-		0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */; };
+		0EE4BF0A282AEEDF003BF45E /* 4. ChooseFighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */; };
 		0EE4BF10282AF705003BF45E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE4BF0F282AF705003BF45E /* ACarousel */; };
 		0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF11282C2726003BF45E /* ButtonStyle.swift */; };
 		0EEE3106282D96DB00FCF95A /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE3105282D96DB00FCF95A /* MatchView.swift */; };
 		0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE3107282DBD9300FCF95A /* BackButton.swift */; };
-		0EEE310A282DC2B700FCF95A /* TeamSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE3109282DC2B700FCF95A /* TeamSelectionView.swift */; };
+		0EEE310A282DC2B700FCF95A /* 6. TeamSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */; };
 		0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */; };
 		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
 		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
 		410A442B28341365005C527B /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410A44292834135D005C527B /* PressStart2P.ttf */; };
-		4137A2282832D18600AEB704 /* 4.SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 4.SetMatchView.swift */; };
+		4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 5. SetMatchView.swift */; };
 		417D57D2283689E100C32993 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 417D57D1283689E100C32993 /* Lottie */; };
 		417D57D428368A2400C32993 /* Fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 417D57D328368A2400C32993 /* Fire.json */; };
 		417D57D728368AAB00C32993 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D57D628368AAB00C32993 /* LottieView.swift */; };
+		4181F1DC2836DF3E009D1127 /* 7. GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DB2836DF3E009D1127 /* 7. GameView.swift */; };
+		4181F1DE2836E110009D1127 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DD2836E110009D1127 /* GameScene.swift */; };
 		419082A3282F4CB200D1771E /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* InformationView.swift */; };
 		419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A4282F4CEE00D1771E /* SettingsView.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
@@ -52,18 +54,20 @@
 		0E20109A282C3974009732F9 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		0E20109C282C4185009732F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0E20109F282C4AC5009732F9 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
-		0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFighterView.swift; sourceTree = "<group>"; };
+		0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. ChooseFighterView.swift"; sourceTree = "<group>"; };
 		0EE4BF11282C2726003BF45E /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		0EEE3105282D96DB00FCF95A /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		0EEE3107282DBD9300FCF95A /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
-		0EEE3109282DC2B700FCF95A /* TeamSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectionView.swift; sourceTree = "<group>"; };
+		0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. TeamSelectionView.swift"; sourceTree = "<group>"; };
 		0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledBezier.swift; sourceTree = "<group>"; };
 		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
 		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
 		410A44292834135D005C527B /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
-		4137A2272832D18600AEB704 /* 4.SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.SetMatchView.swift; sourceTree = "<group>"; };
+		4137A2272832D18600AEB704 /* 5. SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. SetMatchView.swift"; sourceTree = "<group>"; };
 		417D57D328368A2400C32993 /* Fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fire.json; sourceTree = "<group>"; };
 		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		4181F1DB2836DF3E009D1127 /* 7. GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. GameView.swift"; sourceTree = "<group>"; };
+		4181F1DD2836E110009D1127 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		419082A2282F4CB200D1771E /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		419082A4282F4CEE00D1771E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,9 +110,6 @@
 		0EE4BF0B282AF5C8003BF45E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0EEE3105282D96DB00FCF95A /* MatchView.swift */,
-				0EEE3109282DC2B700FCF95A /* TeamSelectionView.swift */,
-				0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */,
 				0EE4BF0C282AF5D7003BF45E /* Components */,
 			);
 			path = Views;
@@ -224,7 +225,12 @@
 				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
 				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
 				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
-				4137A2272832D18600AEB704 /* 4.SetMatchView.swift */,
+				0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */,
+				4137A2272832D18600AEB704 /* 5. SetMatchView.swift */,
+				0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */,
+				4181F1DB2836DF3E009D1127 /* 7. GameView.swift */,
+				4181F1DD2836E110009D1127 /* GameScene.swift */,
+				0EEE3105282D96DB00FCF95A /* MatchView.swift */,
 				419082A2282F4CB200D1771E /* InformationView.swift */,
 				419082A4282F4CEE00D1771E /* SettingsView.swift */,
 				41B0DA292832E15400F5A82C /* Components  */,
@@ -335,6 +341,7 @@
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
 				0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */,
 				417D57D728368AAB00C32993 /* LottieView.swift in Sources */,
+				4181F1DE2836E110009D1127 /* GameScene.swift in Sources */,
 				41B0DA302833422000F5A82C /* DojoView.swift in Sources */,
 				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
@@ -343,19 +350,20 @@
 				0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */,
-				4137A2282832D18600AEB704 /* 4.SetMatchView.swift in Sources */,
+				4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */,
 				419082A3282F4CB200D1771E /* InformationView.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
-				0EEE310A282DC2B700FCF95A /* TeamSelectionView.swift in Sources */,
+				0EEE310A282DC2B700FCF95A /* 6. TeamSelectionView.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
-				0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */,
+				0EE4BF0A282AEEDF003BF45E /* 4. ChooseFighterView.swift in Sources */,
 				0E20109B282C3974009732F9 /* Background.swift in Sources */,
 				41B0DA2D283326DF00F5A82C /* AnimationView.swift in Sources */,
 				41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */,
+				4181F1DC2836DF3E009D1127 /* 7. GameView.swift in Sources */,
 				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

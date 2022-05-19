@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Lottie
+import AVFoundation
 
 struct SplashScreenView: View {
     @State var isMainMenuCalled = false

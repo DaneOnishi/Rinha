@@ -33,9 +33,6 @@ struct MainMenuView: View {
                         .resizable()
                         .edgesIgnoringSafeArea(.all)
                     
-                    Image("Circle")
-                        .resizable()
-                        .frame(width: 150, height: 150, alignment: .center)
                     
                     VStack {
                         SpriteView(scene: DojoView.buildScene(actionPerformed: { action, scene in
@@ -62,7 +59,7 @@ struct MainMenuView: View {
                         }), options: [.allowsTransparency])
                         .background(Color.clear)
                         
-                    }//.frame(width: 385/1.5, height: 470/1.5, alignment: .center)
+                    }.padding(.bottom, 200)
                     
                     
                     VStack {
@@ -132,10 +129,10 @@ struct MainMenuView: View {
                         } label: {
                             EmptyView()
                         }
-                    }.padding(.top, 500)
+                    }.padding(.top, 300)
                 }.onAppear{
                     
-                    music.playMenuMusic()
+                   // music.playMenuMusic()
                     
                 }
                 SpriteView(scene: doorsScene, options: [.allowsTransparency])
