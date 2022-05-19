@@ -29,15 +29,16 @@ struct GameView: View {
             
             ZStack(alignment: .top) {
                 MyARView()
+                    .edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     HStack {
                         Image("Score-Left")
                             .resizable()
-                            .frame(width: 200, height: 110, alignment: .leading)
+                            .frame(width: 200, height: 115, alignment: .leading)
                         Image("Score-Right")
                             .resizable()
-                            .frame(width: 200, height: 110, alignment: .trailing)
+                            .frame(width: 200, height: 115, alignment: .trailing)
                         
                     }.padding(.top, 50)
                     Spacer()
@@ -52,29 +53,29 @@ struct GameView: View {
                                 Image("Cheer-Button")
                                     .resizable()
                                     .frame(width: 75, height: 75, alignment: .center)
-                            }
+                            }.padding(.leading, 20)
                             
                             Button {
                             } label: {
                                 Image("Magnet")
                                     .resizable()
-                                    .frame(width: 60, height: 70, alignment: .center)
-                            }
+                                    .frame(width: 80, height: 80, alignment: .center)
+                            }.padding(5)
                             
                             Button {
                             } label: {
                                 Image("Fan")
                                     .resizable()
-                                    .frame(width: 60, height: 60, alignment: .center)
-                            }
+                                    .frame(width: 75, height: 75, alignment: .center)
+                            }.padding(5)
                             
                             Button {
                             } label: {
                                 Image("Box")
                                     .resizable()
-                                    .frame(width: 60, height: 60, alignment: .center)
-                            }
-                        }.padding(20)
+                                    .frame(width: 75, height: 75, alignment: .center)
+                            }.padding(.trailing, 20)
+                        }
                     }.padding(.bottom, 0)
                     
                 }
