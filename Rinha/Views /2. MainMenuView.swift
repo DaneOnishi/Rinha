@@ -19,14 +19,15 @@ struct MainMenuView: View {
     static func buildDoorAnimationScene() -> DoorsAnimation {
         let scene = DoorsAnimation(fileNamed: "Doors")!
         scene.scaleMode = .resizeFill
+        scene.backgroundColor = .clear
         return scene
     }
     let music =  SFXMusicSingleton.shared
     var doorsScene = Self.buildDoorAnimationScene()
     
     var body: some View {
-        ZStack {
-            NavigationView {
+        NavigationView {
+            ZStack {
                 ZStack(alignment: .center) {
                     Image("Background-2")
                         .resizable()
@@ -75,7 +76,8 @@ struct MainMenuView: View {
                         
                                             HStack {
                                                 Button {
-                                                    showInfo.toggle()
+//                                                    showInfo.toggle()
+                                                    doorsScene.performDoorAnimation()
                                                 } label: {
                                                     Image("Details-Button")
                                                         .resizable()
@@ -136,14 +138,15 @@ struct MainMenuView: View {
                     music.playMenuMusic()
                     
                 }
-            }
-            
-            
                 SpriteView(scene: doorsScene, options: [.allowsTransparency])
-                .ignoresSafeArea()
-                .background(Color.clear)
-//                .scaledToFill()
-                .allowsHitTesting(false)
+                    .ignoresSafeArea()
+                    .background(Color.clear)
+                    .allowsHitTesting(false)
+            }
+            .navigationViewStyle(.stack)
+            
+            
+            //                .scaledToFill()
 //                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
         

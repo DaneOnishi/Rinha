@@ -9,8 +9,12 @@ import SwiftUI
 import SpriteKit
 
 class DoorsAnimation: SKScene {
-    var leftDoor: SKSpriteNode!
-    var rightDoor: SKSpriteNode!
+    var leftDoor: SKSpriteNode {
+        childNode(withName: "Door-Left") as! SKSpriteNode
+    }
+    var rightDoor: SKSpriteNode {
+        childNode(withName: "Door-Right") as! SKSpriteNode
+    }
     var leftDoorInitialPosition: CGPoint!
     var leftDoorFinalPosition: CGPoint!
     var rightDoorInitialPosition: CGPoint!
@@ -18,8 +22,8 @@ class DoorsAnimation: SKScene {
     
     
     override func didMove(to view: SKView) {
-        leftDoor = (childNode(withName: "Door-Left") as! SKSpriteNode)
-        rightDoor = (childNode(withName: "Door-Right") as! SKSpriteNode)
+//        leftDoor = ()
+//        rightDoor = ()
 //        
 //        leftDoor.size.height = size.height
 //        leftDoor.size.width = size.width / 2

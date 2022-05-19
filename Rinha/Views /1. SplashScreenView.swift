@@ -6,17 +6,33 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct SplashScreenView: View {
-    
+    @State var isMainMenuCalled = false
     var body: some View {
-        ZStack {
+        NavigationView {
+            ZStack {
+                Color.black
+                    .edgesIgnoringSafeArea(.all)
+                LottieView(lottieFile: "Fire")
+                    .frame(width: 150, height: 150, alignment: .center)
+                
+                NavigationLink(destination: MainMenuView(), isActive: $isMainMenuCalled, label: {
+                    Image("main_logo").renderingMode(.original).frame(width: 100, height: 100)
+                })
+            }  .navigationBarHidden(true)
+                .edgesIgnoringSafeArea([.top, .bottom])
+        } .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.isMainMenuCalled.toggle()
+            }
         }
     }
 }
-
-struct SplashScreenView_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashScreenView()
+    
+    struct SplashScreenView_Previews: PreviewProvider {
+        static var previews: some View {
+            SplashScreenView()
+        }
     }
-}

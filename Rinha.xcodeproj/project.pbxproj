@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E20109B282C3974009732F9 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20109A282C3974009732F9 /* Background.swift */; };
 		0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20109F282C4AC5009732F9 /* ImageOverlay.swift */; };
-		0EE3D1FC2831A9F800BD6DE4 /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EE3D1FB2831A9F800BD6DE4 /* PressStart2P.ttf */; };
 		0EE4BF0A282AEEDF003BF45E /* ChooseFighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */; };
 		0EE4BF10282AF705003BF45E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE4BF0F282AF705003BF45E /* ACarousel */; };
 		0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4BF11282C2726003BF45E /* ButtonStyle.swift */; };
@@ -19,7 +18,11 @@
 		0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */; };
 		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
 		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
+		410A442B28341365005C527B /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410A44292834135D005C527B /* PressStart2P.ttf */; };
 		4137A2282832D18600AEB704 /* 4.SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 4.SetMatchView.swift */; };
+		417D57D2283689E100C32993 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 417D57D1283689E100C32993 /* Lottie */; };
+		417D57D428368A2400C32993 /* Fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 417D57D328368A2400C32993 /* Fire.json */; };
+		417D57D728368AAB00C32993 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D57D628368AAB00C32993 /* LottieView.swift */; };
 		419082A3282F4CB200D1771E /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* InformationView.swift */; };
 		419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A4282F4CEE00D1771E /* SettingsView.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
@@ -49,7 +52,6 @@
 		0E20109A282C3974009732F9 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		0E20109C282C4185009732F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0E20109F282C4AC5009732F9 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
-		0EE3D1FB2831A9F800BD6DE4 /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PressStart2P.ttf; path = ../../../Documents/press_start_2p/PressStart2P.ttf; sourceTree = "<group>"; };
 		0EE4BF09282AEEDF003BF45E /* ChooseFighterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFighterView.swift; sourceTree = "<group>"; };
 		0EE4BF11282C2726003BF45E /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		0EEE3105282D96DB00FCF95A /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
@@ -58,7 +60,10 @@
 		0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledBezier.swift; sourceTree = "<group>"; };
 		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
 		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
+		410A44292834135D005C527B /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
 		4137A2272832D18600AEB704 /* 4.SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.SetMatchView.swift; sourceTree = "<group>"; };
+		417D57D328368A2400C32993 /* Fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fire.json; sourceTree = "<group>"; };
+		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		419082A2282F4CB200D1771E /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		419082A4282F4CEE00D1771E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE4BF10282AF705003BF45E /* ACarousel in Frameworks */,
+				417D57D2283689E100C32993 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		417D57D528368A8600C32993 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				417D57D328368A2400C32993 /* Fire.json */,
+				41B0DA2C283326DF00F5A82C /* AnimationView.swift */,
+				417D57D628368AAB00C32993 /* LottieView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		41AEEE32282988F4000921EA = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +163,7 @@
 		41AEEE3D282988F4000921EA /* Rinha */ = {
 			isa = PBXGroup;
 			children = (
+				417D57D528368A8600C32993 /* Animations */,
 				0E20109C282C4185009732F9 /* Info.plist */,
 				0EE4BF0B282AF5C8003BF45E /* Views */,
 				4101455A282B5C0700268C53 /* Extensions */,
@@ -194,7 +211,7 @@
 		41AEEE5E2829FF76000921EA /* Design System */ = {
 			isa = PBXGroup;
 			children = (
-				0EE3D1FB2831A9F800BD6DE4 /* PressStart2P.ttf */,
+				410A44292834135D005C527B /* PressStart2P.ttf */,
 				41AEEE5F2829FF89000921EA /* Fonts.swift */,
 				41AEEE612829FFE6000921EA /* Colors.swift */,
 			);
@@ -221,7 +238,6 @@
 		41B0DA292832E15400F5A82C /* Components  */ = {
 			isa = PBXGroup;
 			children = (
-				41B0DA2C283326DF00F5A82C /* AnimationView.swift */,
 				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
 				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
 			);
@@ -246,6 +262,7 @@
 			name = Rinha;
 			packageProductDependencies = (
 				0EE4BF0F282AF705003BF45E /* ACarousel */,
+				417D57D1283689E100C32993 /* Lottie */,
 			);
 			productName = Rinha;
 			productReference = 41AEEE3B282988F4000921EA /* Rinha.app */;
@@ -277,6 +294,7 @@
 			mainGroup = 41AEEE32282988F4000921EA;
 			packageReferences = (
 				0EE4BF0E282AF705003BF45E /* XCRemoteSwiftPackageReference "ACarousel" */,
+				417D57D0283689E100C32993 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 41AEEE3C282988F4000921EA /* Products */;
 			projectDirPath = "";
@@ -293,12 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AEEE592829FBD3000921EA /* Rat-Sound.mp3 in Resources */,
+				410A442B28341365005C527B /* PressStart2P.ttf in Resources */,
 				41AEEE46282988F6000921EA /* Preview Assets.xcassets in Resources */,
 				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
 				41B0DA342833D84400F5A82C /* Doors.sks in Resources */,
 				41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */,
-				0EE3D1FC2831A9F800BD6DE4 /* PressStart2P.ttf in Resources */,
 				41AEEE43282988F6000921EA /* Assets.xcassets in Resources */,
+				417D57D428368A2400C32993 /* Fire.json in Resources */,
 				41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */,
 				41AEEE532829FBBA000921EA /* Fish-Sound.mp3 in Resources */,
 				41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */,
@@ -315,6 +334,7 @@
 			files = (
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
 				0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */,
+				417D57D728368AAB00C32993 /* LottieView.swift in Sources */,
 				41B0DA302833422000F5A82C /* DojoView.swift in Sources */,
 				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
@@ -549,6 +569,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		417D57D0283689E100C32993 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -556,6 +584,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0EE4BF0E282AF705003BF45E /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
+		};
+		417D57D1283689E100C32993 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D57D0283689E100C32993 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
