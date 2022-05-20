@@ -48,6 +48,8 @@
 		41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B0DA312833433C00F5A82C /* DojoScene.sks */; };
 		41B0DA342833D84400F5A82C /* Doors.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41B0DA332833D84400F5A82C /* Doors.sks */; };
 		41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */; };
+		41D86A292837E34A00D2E6E0 /* 2.1. Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */; };
+		41D86A2B2837E54700D2E6E0 /* WinnerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		41B0DA312833433C00F5A82C /* DojoScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DojoScene.sks; sourceTree = "<group>"; };
 		41B0DA332833D84400F5A82C /* Doors.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Doors.sks; sourceTree = "<group>"; };
 		41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsAnimation.swift; sourceTree = "<group>"; };
+		41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.1. Leaderboard.swift"; sourceTree = "<group>"; };
+		41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,7 @@
 			children = (
 				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
 				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
+				41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */,
 				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
 				0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */,
 				4137A2272832D18600AEB704 /* 5. SetMatchView.swift */,
@@ -246,6 +251,7 @@
 			children = (
 				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
 				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
+				41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */,
 			);
 			path = "Components ";
 			sourceTree = "<group>";
@@ -355,6 +361,8 @@
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
+				41D86A2B2837E54700D2E6E0 /* WinnerCard.swift in Sources */,
+				41D86A292837E34A00D2E6E0 /* 2.1. Leaderboard.swift in Sources */,
 				0EEE310A282DC2B700FCF95A /* 6. TeamSelectionView.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
