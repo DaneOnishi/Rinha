@@ -12,8 +12,6 @@ struct WinnerCard: View {
     
     var body: some View {
         ZStack {
-            
-            
             Image("Winner-Card")
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height / 1.7, alignment: .center)

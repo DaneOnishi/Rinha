@@ -25,8 +25,12 @@
 		417D57D728368AAB00C32993 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D57D628368AAB00C32993 /* LottieView.swift */; };
 		4181F1DC2836DF3E009D1127 /* 7. GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DB2836DF3E009D1127 /* 7. GameView.swift */; };
 		4181F1DE2836E110009D1127 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DD2836E110009D1127 /* GameScene.swift */; };
-		419082A3282F4CB200D1771E /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* InformationView.swift */; };
+		419082A3282F4CB200D1771E /* 2.2. InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* 2.2. InformationView.swift */; };
 		419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A4282F4CEE00D1771E /* SettingsView.swift */; };
+		41986FE228393A1F006BD45E /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE128393A1F006BD45E /* LeaderboardEntry.swift */; };
+		41986FE428398032006BD45E /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE328398032006BD45E /* LeaderboardCell.swift */; };
+		41986FE628398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE528398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift */; };
+		41986FE82839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE72839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
@@ -50,6 +54,7 @@
 		41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */; };
 		41D86A292837E34A00D2E6E0 /* 2.1. Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */; };
 		41D86A2B2837E54700D2E6E0 /* WinnerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */; };
+		41D86A2D2838276D00D2E6E0 /* CharacterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A2C2838276D00D2E6E0 /* CharacterInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,8 +75,12 @@
 		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		4181F1DB2836DF3E009D1127 /* 7. GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. GameView.swift"; sourceTree = "<group>"; };
 		4181F1DD2836E110009D1127 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		419082A2282F4CB200D1771E /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		419082A2282F4CB200D1771E /* 2.2. InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.2. InformationView.swift"; sourceTree = "<group>"; };
 		419082A4282F4CEE00D1771E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		41986FE128393A1F006BD45E /* LeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
+		41986FE328398032006BD45E /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		41986FE528398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.1.1. LeaderboardMatchMasterView.swift"; sourceTree = "<group>"; };
+		41986FE72839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.1.2. LeaderboardCheerUpGodView.swift"; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEEE3E282988F4000921EA /* RinhaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinhaApp.swift; sourceTree = "<group>"; };
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +105,7 @@
 		41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsAnimation.swift; sourceTree = "<group>"; };
 		41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.1. Leaderboard.swift"; sourceTree = "<group>"; };
 		41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerCard.swift; sourceTree = "<group>"; };
+		41D86A2C2838276D00D2E6E0 /* CharacterInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,7 @@
 		0EE4BF0B282AF5C8003BF45E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41D86A2E28383D7A00D2E6E0 /* View Model */,
 				0EE4BF0C282AF5D7003BF45E /* Components */,
 			);
 			path = Views;
@@ -122,11 +133,15 @@
 		0EE4BF0C282AF5D7003BF45E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
+				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
+				41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */,
 				0EE4BF11282C2726003BF45E /* ButtonStyle.swift */,
 				0E20109A282C3974009732F9 /* Background.swift */,
 				0E20109F282C4AC5009732F9 /* ImageOverlay.swift */,
 				0EEE3107282DBD9300FCF95A /* BackButton.swift */,
 				0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */,
+				41986FE328398032006BD45E /* LeaderboardCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,6 +244,9 @@
 				41AEEE69282A0438000921EA /* 1. SplashScreenView.swift */,
 				41AEEE66282A016E000921EA /* 2. MainMenuView.swift */,
 				41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */,
+				41986FE528398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift */,
+				41986FE72839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift */,
+				419082A2282F4CB200D1771E /* 2.2. InformationView.swift */,
 				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
 				0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */,
 				4137A2272832D18600AEB704 /* 5. SetMatchView.swift */,
@@ -236,9 +254,7 @@
 				4181F1DB2836DF3E009D1127 /* 7. GameView.swift */,
 				4181F1DD2836E110009D1127 /* GameScene.swift */,
 				0EEE3105282D96DB00FCF95A /* MatchView.swift */,
-				419082A2282F4CB200D1771E /* InformationView.swift */,
 				419082A4282F4CEE00D1771E /* SettingsView.swift */,
-				41B0DA292832E15400F5A82C /* Components  */,
 				41B0DA2F2833422000F5A82C /* DojoView.swift */,
 				41B0DA312833433C00F5A82C /* DojoScene.sks */,
 				41B0DA332833D84400F5A82C /* Doors.sks */,
@@ -246,14 +262,13 @@
 			path = "Views ";
 			sourceTree = "<group>";
 		};
-		41B0DA292832E15400F5A82C /* Components  */ = {
+		41D86A2E28383D7A00D2E6E0 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
-				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
-				41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */,
+				41D86A2C2838276D00D2E6E0 /* CharacterInformation.swift */,
+				41986FE128393A1F006BD45E /* LeaderboardEntry.swift */,
 			);
-			path = "Components ";
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,10 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41986FE628398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift in Sources */,
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
 				0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */,
+				41986FE228393A1F006BD45E /* LeaderboardEntry.swift in Sources */,
 				417D57D728368AAB00C32993 /* LottieView.swift in Sources */,
 				4181F1DE2836E110009D1127 /* GameScene.swift in Sources */,
+				41986FE428398032006BD45E /* LeaderboardCell.swift in Sources */,
 				41B0DA302833422000F5A82C /* DojoView.swift in Sources */,
 				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
@@ -357,7 +375,7 @@
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */,
 				4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */,
-				419082A3282F4CB200D1771E /* InformationView.swift in Sources */,
+				419082A3282F4CB200D1771E /* 2.2. InformationView.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
@@ -369,9 +387,11 @@
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
 				0EE4BF0A282AEEDF003BF45E /* 4. ChooseFighterView.swift in Sources */,
 				0E20109B282C3974009732F9 /* Background.swift in Sources */,
+				41986FE82839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift in Sources */,
 				41B0DA2D283326DF00F5A82C /* AnimationView.swift in Sources */,
 				41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */,
 				4181F1DC2836DF3E009D1127 /* 7. GameView.swift in Sources */,
+				41D86A2D2838276D00D2E6E0 /* CharacterInformation.swift in Sources */,
 				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

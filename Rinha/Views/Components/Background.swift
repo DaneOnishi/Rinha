@@ -21,7 +21,7 @@ struct Background: View {
 
             
             ImageOverlay(text: text ,textSize: textSize)
-                .frame(maxWidth: 210, minHeight: 70, alignment: .top)
+                .frame(maxWidth: 210, minHeight: 70, alignment: .center)
         }
     }
 }

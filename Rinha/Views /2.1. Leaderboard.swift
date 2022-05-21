@@ -9,50 +9,137 @@ import SwiftUI
 import RealityKit
 
 struct Leaderboard: View {
-    var userList: [String] = ["Arnaldo", "Armando", "Truco", "Tobby", "Amanda", "Sasha Meneghel", "Blob Sampaio"]
+   
+    @State private var offset = CGSize.zero
+    @State var textInput = ""
+    let screenWidth = UIScreen.main.bounds.size.width
+    @State var actualView: ShowView = .matchMaster
+    
     var body: some View {
         ZStack {
+            Color("BackgroundColor")
+                .edgesIgnoringSafeArea(.all)
             Background(text: "Leaderboard")
+            
             VStack {
-                HStack {
-                    Image("Small-Chracter-Circle")
-                        .resizable()
-                        .frame(width: 100, height: 100, alignment: .leading)
-                        .padding(.leading, 40)
-                    Image("Small-Chracter-Circle")
-                        .resizable()
-                        .frame(width: 150, height: 150, alignment: .leading)
-                        .padding(-10)
+                    SegmentedView(actualView: $actualView)
+            }
+            .padding(.top, 100)
+        }
+        
+    }
+}
+
+struct SegmentedView : View {
+    var width = UIScreen.main.bounds.width
+    @Binding var actualView: ShowView
+    
+    var body: some View{
+        
+        VStack(spacing: 0){
+            
+            AppBar2(actualView: $actualView)
+            
+            GeometryReader{g in
+                
+                HStack(spacing: 0){
                     
-                    Image("Small-Chracter-Circle")
-                        .resizable()
-                        .frame(width: 100, height: 100, alignment: .leading)
-                        .padding(.trailing, 40)
-                }.padding(.top, 200)
-                ScrollView {
-                    VStack {
-                        ForEach(userList, id: \.self) { user in
-                            ZStack {
+                    switch actualView {
+                    case .matchMaster:
+                        MatchMasterView(userList: [
+                            LeaderboardEntry(user: "sahita", points: 45),
+                            LeaderboardEntry(user: "bibou", points: 95)
+                                                  ])
+                            .frame(width: g.frame(in : .global).width)
+                           
+                    case .cheerUpGod:
+                        CheerUpGodView(userList: [
+                            LeaderboardEntry(user: "Nonito", points: 56),
+                            LeaderboardEntry(user: "Bobi", points: 67)
+                        ])
+                            .frame(width: g.frame(in : .global).width)
+                    }
+                }
+            }
+        }
+        .animation(.easeInOut)
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+}
+
+struct AppBar2 : View {
+    var width = UIScreen.main.bounds.width
+    @Binding var actualView: ShowView
+    
+    var body: some View{
+        
+        ZStack(alignment: .center) {
+            Rectangle()
+                .foregroundColor(.gray.opacity(0.1))
+                .cornerRadius(100)
+                .frame(width: UIScreen.main.bounds.width - 80, height: UIScreen.main.bounds.height / 17, alignment: .center)
+                .padding(.top, 40)
+            
+            VStack(alignment: .center, content: {
+                HStack{
+                    Button(action: {
+                        actualView = .matchMaster
+                    }) {
+                        
+                        VStack(spacing: 8){
+                            
+                            ZStack(){
                                 Rectangle()
-                                    .frame(width: UIScreen.main.bounds.width - 60, height: 50, alignment: .center)
-                                    .foregroundColor(.red)
+                                    .fill(actualView == .matchMaster ? .white : .clear)
+                                    .frame(width: 140, height: 40)
                                     .cornerRadius(100)
                                 
-                                Text(user)
-                                    .foregroundColor(.white)
+                                Text("Match Master")
+                                    .foregroundColor( actualView == .matchMaster ? Color("BackgroundColor") : .white.opacity(0.4))
                             }
                         }
                     }
-                }.padding(.top, 50)
                     
-                
-            }
+                    Button(action: {
+                        actualView = .cheerUpGod
+                        
+                    }) {
+                        
+                        VStack(spacing: 8){
+                            
+                            ZStack(){
+                                Rectangle()
+                                    .fill(actualView == .cheerUpGod ? .white : .clear)
+                                    .frame(width: 140, height: 40)
+                                    .cornerRadius(100)
+                                
+                                Text("Cheer Up God")
+                                    .foregroundColor(actualView == .cheerUpGod ? Color("BackgroundColor") : .white.opacity(0.4))
+                            }
+                        }
+                    }
+                }
+            })
+            .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top) ?? 0 + 15)
+            .padding(.horizontal)
+        .padding(.bottom, 10)
         }
     }
 }
 
+enum ShowView {
+    case matchMaster
+    case cheerUpGod
+}
+
+
 struct Leaderboard_Previews: PreviewProvider {
     static var previews: some View {
-        Leaderboard()
+        Group {
+            Leaderboard()
+            Leaderboard()
+                .previewDevice("iPod touch (7th generation)")
+        }
     }
 }
