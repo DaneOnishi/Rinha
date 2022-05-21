@@ -47,16 +47,16 @@ struct SegmentedView : View {
                     switch actualView {
                     case .matchMaster:
                         MatchMasterView(userList: [
-                            LeaderboardEntry(user: "sahita", points: 45),
-                            LeaderboardEntry(user: "bibou", points: 95)
-                                                  ])
+                            LeaderboardEntry(user: "nana", points: 30, position: 4, state: "down.arrow"),
+                            LeaderboardEntry(user: "nono", points: 32, position: 1, state: "up.arrow")
+                        ])
                             .frame(width: g.frame(in : .global).width)
                            
                     case .cheerUpGod:
                         CheerUpGodView(userList: [
-                            LeaderboardEntry(user: "Nonito", points: 56),
-                            LeaderboardEntry(user: "Bobi", points: 67)
-                        ])
+                            LeaderboardEntry(user: "Ratatoing", points: 13, position: 1, state: "down.arrow"),
+                            LeaderboardEntry(user: "Blob", points: 12, position: 2, state: "up.arrow")
+                            ])
                             .frame(width: g.frame(in : .global).width)
                     }
                 }

@@ -8,13 +8,7 @@
 import SwiftUI
 
 struct MatchMasterView: View {
-    var userList: [LeaderboardEntry] = [
-        LeaderboardEntry(user: "Arnaldo", points: 12),
-        LeaderboardEntry(user: "Armando", points: 34),
-        LeaderboardEntry(user: "Sasha Meneghel", points: 23),
-        LeaderboardEntry(user: "Tico", points: 0),
-        LeaderboardEntry(user: "Blob Sampaio", points: 4)
-    ]
+    var userList: [LeaderboardEntry]
     
     var body: some View {
         ZStack {
@@ -38,25 +32,11 @@ struct MatchMasterView: View {
                     
                     VStack {
                         ForEach(userList, id: \.id) { entry in
-                            ZStack(alignment: .leading) {
-                                Rectangle()
-                                    .frame(width: UIScreen.main.bounds.width - 60, height: 50, alignment: .center)
-                                    .foregroundColor(.red)
-                                    .cornerRadius(100)
-                                
-                                HStack(spacing: 34) {
-                                    Text(entry.user)
-                                        .foregroundColor(.white)
-                                    Text(entry.points.description)
-                                        .foregroundColor(.white)
-                                        
-                                }.padding(.horizontal)
-                            }
+                            LeaderboardCell(entry: entry)
+                            
                         }
-                    }.padding(.top, 30)
+                    }
                 }
-                
-                
             }
         }
     }
@@ -65,6 +45,9 @@ struct MatchMasterView: View {
 
 struct __1_1__LeaderboardMatchMasterView_Previews: PreviewProvider {
     static var previews: some View {
-        MatchMasterView()
+        MatchMasterView(userList: [
+            LeaderboardEntry(user: "nana", points: 30, position: 4, state: "down.arrow"),
+            LeaderboardEntry(user: "nono", points: 32, position: 1, state: "up.arrow")
+        ])
     }
 }

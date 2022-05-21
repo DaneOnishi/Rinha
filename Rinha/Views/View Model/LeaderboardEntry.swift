@@ -10,6 +10,8 @@ import Foundation
 struct LeaderboardEntry {
     let user: String
     let points: Int
+    let position: Int
+    let state: String
     
     var id: String {
         "\(user)_\(points)"

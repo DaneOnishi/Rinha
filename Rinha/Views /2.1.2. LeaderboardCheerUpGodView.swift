@@ -8,13 +8,7 @@
 import SwiftUI
 
 struct CheerUpGodView: View {
-    var userList: [LeaderboardEntry] = [
-        LeaderboardEntry(user: "Arnaldo", points: 12),
-        LeaderboardEntry(user: "Armando", points: 34),
-        LeaderboardEntry(user: "Sasha Meneghel", points: 23),
-        LeaderboardEntry(user: "Tico", points: 0),
-        LeaderboardEntry(user: "Blob Sampaio", points: 4)
-    ]
+    var userList: [LeaderboardEntry]
     
     var body: some View {
         ZStack {
@@ -38,32 +32,21 @@ struct CheerUpGodView: View {
                     
                     VStack {
                         ForEach(userList, id: \.id) { entry in
-                            ZStack(alignment: .leading) {
-                                Rectangle()
-                                    .frame(width: UIScreen.main.bounds.width - 60, height: 50, alignment: .center)
-                                    .foregroundColor(.red)
-                                    .cornerRadius(100)
-                                
-                                HStack(spacing: 34) {
-                                    Text(entry.user)
-                                        .foregroundColor(.white)
-                                    Text(entry.points.description)
-                                        .foregroundColor(.white)
-                                        
-                                }.padding(.horizontal)
-                            }
+                            LeaderboardCell(entry: entry)
+                            
                         }
-                    }.padding(.top, 30)
+                    }
                 }
-                
-                
             }
         }
     }
 }
-
-struct __1_2__LeaderboardCheerUpGodView_Previews: PreviewProvider {
-    static var previews: some View {
-        CheerUpGodView()
+    
+    struct __1_2__LeaderboardCheerUpGodView_Previews: PreviewProvider {
+        static var previews: some View {
+            CheerUpGodView(userList: [
+                LeaderboardEntry(user: "Ratatoing", points: 13, position: 1, state: "down.arrow"),
+                LeaderboardEntry(user: "Blob", points: 12, position: 2, state: "up.arrow")
+                ])
+        }
     }
-}
