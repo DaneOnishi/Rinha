@@ -25,7 +25,7 @@ struct SplashScreenView: View {
             }  .navigationBarHidden(true)
                 .edgesIgnoringSafeArea([.top, .bottom])
         } .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                 self.isMainMenuCalled.toggle()
             }
         }

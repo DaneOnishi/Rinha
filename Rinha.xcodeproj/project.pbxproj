@@ -23,7 +23,7 @@
 		417D57D2283689E100C32993 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 417D57D1283689E100C32993 /* Lottie */; };
 		417D57D428368A2400C32993 /* Fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 417D57D328368A2400C32993 /* Fire.json */; };
 		417D57D728368AAB00C32993 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D57D628368AAB00C32993 /* LottieView.swift */; };
-		4181F1DC2836DF3E009D1127 /* 7. GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DB2836DF3E009D1127 /* 7. GameView.swift */; };
+		4181F1DC2836DF3E009D1127 /* 8. GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DB2836DF3E009D1127 /* 8. GameView.swift */; };
 		4181F1DE2836E110009D1127 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181F1DD2836E110009D1127 /* GameScene.swift */; };
 		419082A3282F4CB200D1771E /* 2.2. InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A2282F4CB200D1771E /* 2.2. InformationView.swift */; };
 		419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419082A4282F4CEE00D1771E /* SettingsView.swift */; };
@@ -33,6 +33,7 @@
 		41986FE82839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE72839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift */; };
 		41986FEA2839C404006BD45E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE92839C404006BD45E /* Character.swift */; };
 		41986FEC2839C7D2006BD45E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FEB2839C7D2006BD45E /* SessionManager.swift */; };
+		41986FEE2839D218006BD45E /* 7. QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FED2839D218006BD45E /* 7. QueueView.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
@@ -75,7 +76,7 @@
 		4137A2272832D18600AEB704 /* 5. SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. SetMatchView.swift"; sourceTree = "<group>"; };
 		417D57D328368A2400C32993 /* Fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fire.json; sourceTree = "<group>"; };
 		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		4181F1DB2836DF3E009D1127 /* 7. GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. GameView.swift"; sourceTree = "<group>"; };
+		4181F1DB2836DF3E009D1127 /* 8. GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8. GameView.swift"; sourceTree = "<group>"; };
 		4181F1DD2836E110009D1127 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		419082A2282F4CB200D1771E /* 2.2. InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.2. InformationView.swift"; sourceTree = "<group>"; };
 		419082A4282F4CEE00D1771E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		41986FE72839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.1.2. LeaderboardCheerUpGodView.swift"; sourceTree = "<group>"; };
 		41986FE92839C404006BD45E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		41986FEB2839C7D2006BD45E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		41986FED2839D218006BD45E /* 7. QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. QueueView.swift"; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEEE3E282988F4000921EA /* RinhaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinhaApp.swift; sourceTree = "<group>"; };
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -255,7 +257,8 @@
 				0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */,
 				4137A2272832D18600AEB704 /* 5. SetMatchView.swift */,
 				0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */,
-				4181F1DB2836DF3E009D1127 /* 7. GameView.swift */,
+				41986FED2839D218006BD45E /* 7. QueueView.swift */,
+				4181F1DB2836DF3E009D1127 /* 8. GameView.swift */,
 				4181F1DD2836E110009D1127 /* GameScene.swift */,
 				0EEE3105282D96DB00FCF95A /* MatchView.swift */,
 				419082A4282F4CEE00D1771E /* SettingsView.swift */,
@@ -386,6 +389,7 @@
 				419082A3282F4CB200D1771E /* 2.2. InformationView.swift in Sources */,
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */,
+				41986FEE2839D218006BD45E /* 7. QueueView.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				41D86A2B2837E54700D2E6E0 /* WinnerCard.swift in Sources */,
 				41D86A292837E34A00D2E6E0 /* 2.1. Leaderboard.swift in Sources */,
@@ -398,7 +402,7 @@
 				41986FE82839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift in Sources */,
 				41B0DA2D283326DF00F5A82C /* AnimationView.swift in Sources */,
 				41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */,
-				4181F1DC2836DF3E009D1127 /* 7. GameView.swift in Sources */,
+				4181F1DC2836DF3E009D1127 /* 8. GameView.swift in Sources */,
 				41D86A2D2838276D00D2E6E0 /* CharacterInformation.swift in Sources */,
 				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 			);
