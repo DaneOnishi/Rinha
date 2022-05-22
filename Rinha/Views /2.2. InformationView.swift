@@ -10,8 +10,10 @@ import ACarousel
 
 
 struct InformationView: View {
-    let items: [Item] = roles.map { Item(image: Image($0)) }
+    
+    let chars = Character.allCases.map { $0.carouselImageSmall }
     @State var currentIndex: Int = 0
+    
     var characters: [CharacterInformation] = [
         CharacterInformation(character: "", name: "Rata Loka", text: ""),
         CharacterInformation(character: "Llhama Nhaca", name: "Llama Nhaca", text: ""),
@@ -30,32 +32,32 @@ struct InformationView: View {
                         .resizable()
                         .frame(width: 325, height: 325)
                         .clipShape(Circle())
-                    Image(roles[currentIndex])
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 219, height: 219, alignment: .bottom)
-                        .clipShape(Circle())
-                        .offset(y: 19)
+//                    Image(roles[currentIndex])
+//                        .resizable()
+//                        .scaledToFill()
+//                        .frame(width: 219, height: 219, alignment: .bottom)
+//                        .clipShape(Circle())
+//                        .offset(y: 19)
                 }
                 .padding(.top, 40)
                 
-                ACarousel(roles, id: \.self,
-                          index: $currentIndex, headspace: 120,
-                          sidesScaling: 0.98) { name in
-                    ZStack {
-                        Image("Small-Chracter-Circle")
-                            .resizable()
-                            .frame(width: 138, height: 138)
-                            .clipShape(Circle())
-                        Image(name)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 87, height: 87, alignment: .bottom)
-                            .clipShape(Circle())
-                            .offset(y: 7)
-                    }
-                    .frame(height: 138)
-                }
+//                ACarousel(roles, id: \.self,
+//                          index: $currentIndex, headspace: 120,
+//                          sidesScaling: 0.98) { name in
+//                    ZStack {
+//                        Image("Small-Chracter-Circle")
+//                            .resizable()
+//                            .frame(width: 138, height: 138)
+//                            .clipShape(Circle())
+//                        Image(name)
+//                            .resizable()
+//                            .scaledToFill()
+//                            .frame(width: 87, height: 87, alignment: .bottom)
+//                            .clipShape(Circle())
+//                            .offset(y: 7)
+//                    }
+//                    .frame(height: 138)
+//                }
                 Spacer()
                     .frame(height: 60)
             }
