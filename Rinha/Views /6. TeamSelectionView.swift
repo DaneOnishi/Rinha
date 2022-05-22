@@ -13,6 +13,9 @@ struct TeamSelectionView: View {
     
     @State var isUpperButtonSelected = false
     @State var isDownButtonSelected = false
+    var isAnyButtonSelected: Bool {
+        return isUpperButtonSelected || isDownButtonSelected
+    }
     
     var body: some View {
         ZStack {
@@ -25,6 +28,10 @@ struct TeamSelectionView: View {
                     coordinator.switchScreen(to: .game)
                 })
                     .offset(y: -40)
+                    .disabled(!isAnyButtonSelected)
+                    .opacity((isAnyButtonSelected ) ? 1 : 0.3)
+                    
+                    
             }
             Background(text: "Choose your Team!")
             VStack{
