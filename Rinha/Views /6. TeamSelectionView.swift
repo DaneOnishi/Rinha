@@ -11,6 +11,9 @@ struct TeamSelectionView: View {
     
     @EnvironmentObject var coordinator: Coordinator
     
+    @State var isUpperButtonSelected = false
+    @State var isDownButtonSelected = false
+    
     var body: some View {
         ZStack {
             Color("BackgroundColor")
@@ -37,19 +40,25 @@ struct TeamSelectionView: View {
                 Spacer()
                 Button(action: {
                     print("Button pressed!")
+                    isUpperButtonSelected.toggle()
+                    isDownButtonSelected = false
                 }) {
                     Image("Wood-Top")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 424, height: 270)
-        
                 }
                 .clipShape(TopRectangleButtonShape())
                 .contentShape(TopRectangleButtonShape())
                 .offset(x: 50,y: -50)
+                .if(isUpperButtonSelected) { view in
+                    view.shadow(color: .white.opacity(0.5), radius: 30.0, x: 10.0, y: 10.0)
+                }
                 
                 Button(action: {
                     print("Button pressed!")
+                    isDownButtonSelected.toggle()
+                    isUpperButtonSelected = false
                 }) {
                     Image("Wood-Bottom")
                         .resizable()
@@ -59,6 +68,9 @@ struct TeamSelectionView: View {
                 .clipShape(BottomRectangleButtonShape())
                 .contentShape(BottomRectangleButtonShape())
                 .offset(y: -50)
+                .if(isDownButtonSelected) { view in
+                    view.shadow(color: .white.opacity(0.5), radius: 30.0, x: 10.0, y: 10.0)
+                }
                 Spacer()
                 
             }
