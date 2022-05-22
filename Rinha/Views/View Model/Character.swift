@@ -16,8 +16,8 @@ enum Character: String, CaseIterable {
     case fish = "rato5"
     
     var characterImage: String {
-        return "\(rawValue)"
-//        return "\(rawValue)_character_image"
+        //return "\(rawValue)"
+        return "\(rawValue)_character_image"
     }
     
     var carouselImageSmall: String {

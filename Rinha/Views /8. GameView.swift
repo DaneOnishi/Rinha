@@ -17,6 +17,7 @@ struct GameView: View {
     @StateObject var vm = ARViewContainerViewModel()
     
     @State var buttonText: String = "empty"
+    var countdownScene = CountdownScene.buildCountdownScene()
     
     var body: some View {
         
@@ -30,6 +31,9 @@ struct GameView: View {
             ZStack(alignment: .top) {
                 MyARView()
                     .edgesIgnoringSafeArea(.all)
+                SpecialEffectsView()
+                    .edgesIgnoringSafeArea(.all)
+                
                 
                 VStack {
                     HStack {
@@ -79,6 +83,10 @@ struct GameView: View {
                     }.padding(.bottom, 0)
                     
                 }
+                SpriteView(scene: countdownScene, options: [.allowsTransparency])
+                    .ignoresSafeArea()
+                    .background(Color.clear)
+                    .allowsHitTesting(false)
             }
         }
         .ignoresSafeArea()

@@ -44,7 +44,6 @@ class DojoView: SKScene {
         infoButton = (childNode(withName: "Info Button") as! SKSpriteNode)
         soundButton = (childNode(withName: "Sound Button") as! SKSpriteNode)
         
-        
         setupDojoAnimation()
     }
     

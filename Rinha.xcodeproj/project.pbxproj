@@ -19,6 +19,11 @@
 		41014559282B580900268C53 /* 3. ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3. ConnectingTableView.swift */; };
 		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
 		410A442B28341365005C527B /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410A44292834135D005C527B /* PressStart2P.ttf */; };
+		411EDC6E283ABB53001A2EAC /* CountdownScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC6D283ABB53001A2EAC /* CountdownScene.swift */; };
+		411EDC70283AC23C001A2EAC /* Countdown.sks in Resources */ = {isa = PBXBuildFile; fileRef = 411EDC6F283AC23C001A2EAC /* Countdown.sks */; };
+		411EDC72283AC6A2001A2EAC /* Confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 411EDC71283AC6A2001A2EAC /* Confetti.json */; };
+		411EDC74283AC7BB001A2EAC /* Fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 411EDC73283AC7BB001A2EAC /* Fireworks.json */; };
+		411EDC76283ACF7A001A2EAC /* SpecialEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC75283ACF7A001A2EAC /* SpecialEffectsView.swift */; };
 		4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 5. SetMatchView.swift */; };
 		417D57D2283689E100C32993 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 417D57D1283689E100C32993 /* Lottie */; };
 		417D57D428368A2400C32993 /* Fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 417D57D328368A2400C32993 /* Fire.json */; };
@@ -76,6 +81,11 @@
 		41014558282B580900268C53 /* 3. ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3. ConnectingTableView.swift"; sourceTree = "<group>"; };
 		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
 		410A44292834135D005C527B /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
+		411EDC6D283ABB53001A2EAC /* CountdownScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownScene.swift; sourceTree = "<group>"; };
+		411EDC6F283AC23C001A2EAC /* Countdown.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Countdown.sks; sourceTree = "<group>"; };
+		411EDC71283AC6A2001A2EAC /* Confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confetti.json; sourceTree = "<group>"; };
+		411EDC73283AC7BB001A2EAC /* Fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fireworks.json; sourceTree = "<group>"; };
+		411EDC75283ACF7A001A2EAC /* SpecialEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectsView.swift; sourceTree = "<group>"; };
 		4137A2272832D18600AEB704 /* 5. SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. SetMatchView.swift"; sourceTree = "<group>"; };
 		417D57D328368A2400C32993 /* Fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fire.json; sourceTree = "<group>"; };
 		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -146,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				41B0DA2A2832E18200F5A82C /* MainButton.swift */,
-				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
 				41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */,
 				0EE4BF11282C2726003BF45E /* ButtonStyle.swift */,
 				0E20109A282C3974009732F9 /* Background.swift */,
@@ -171,8 +180,14 @@
 			isa = PBXGroup;
 			children = (
 				417D57D328368A2400C32993 /* Fire.json */,
+				411EDC71283AC6A2001A2EAC /* Confetti.json */,
+				411EDC73283AC7BB001A2EAC /* Fireworks.json */,
 				41B0DA2C283326DF00F5A82C /* AnimationView.swift */,
 				417D57D628368AAB00C32993 /* LottieView.swift */,
+				411EDC6D283ABB53001A2EAC /* CountdownScene.swift */,
+				411EDC75283ACF7A001A2EAC /* SpecialEffectsView.swift */,
+				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
+				411EDC6F283AC23C001A2EAC /* Countdown.sks */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -360,13 +375,16 @@
 				41AEEE46282988F6000921EA /* Preview Assets.xcassets in Resources */,
 				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
 				41B0DA342833D84400F5A82C /* Doors.sks in Resources */,
+				411EDC74283AC7BB001A2EAC /* Fireworks.json in Resources */,
 				41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */,
 				41AEEE43282988F6000921EA /* Assets.xcassets in Resources */,
 				417D57D428368A2400C32993 /* Fire.json in Resources */,
 				41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */,
 				41AEEE532829FBBA000921EA /* Fish-Sound.mp3 in Resources */,
 				41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */,
+				411EDC70283AC23C001A2EAC /* Countdown.sks in Resources */,
 				41AEEE552829FBC3000921EA /* Meerkat-Sound.mp3 in Resources */,
+				411EDC72283AC6A2001A2EAC /* Confetti.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +399,7 @@
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
 				41986FF22839EC77006BD45E /* Coordinator.swift in Sources */,
 				41986FEC2839C7D2006BD45E /* SessionManager.swift in Sources */,
+				411EDC6E283ABB53001A2EAC /* CountdownScene.swift in Sources */,
 				41986FEA2839C404006BD45E /* Character.swift in Sources */,
 				0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */,
 				41986FE228393A1F006BD45E /* LeaderboardEntry.swift in Sources */,
@@ -393,6 +412,7 @@
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
 				41014559282B580900268C53 /* 3. ConnectingTableView.swift in Sources */,
 				0EEE3106282D96DB00FCF95A /* MatchView.swift in Sources */,
+				411EDC76283ACF7A001A2EAC /* SpecialEffectsView.swift in Sources */,
 				0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */,
@@ -561,7 +581,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.daneonishi.Rinha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -594,7 +614,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.daneonishi.Rinha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
