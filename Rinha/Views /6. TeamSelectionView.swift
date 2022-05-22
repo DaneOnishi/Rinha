@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TeamSelectionView: View {
+    
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
         ZStack {
             Color("BackgroundColor")
@@ -15,7 +18,9 @@ struct TeamSelectionView: View {
             VStack() {
                 
                 Spacer()
-                ButtonStyle()
+                ButtonStyle(text: "Select", onPress: {
+                    coordinator.switchScreen(to: .game)
+                })
                     .offset(y: -40)
             }
             Background(text: "Choose your Team!")

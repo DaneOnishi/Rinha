@@ -14,6 +14,7 @@ struct Leaderboard: View {
     @State var textInput = ""
     let screenWidth = UIScreen.main.bounds.size.width
     @State var actualView: ShowView = .matchMaster
+    @EnvironmentObject var coordinator: Coordinator
     
     var body: some View {
         ZStack {

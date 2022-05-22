@@ -8,8 +8,11 @@
 import Foundation
 
 class SessionManager {
-    let shared = SessionManager()
-    public init() {}
+    static let shared = SessionManager()
+    private init() {}
     
-    var character: Character? 
+    var character: Character?
+    
+    var firstTeam: [QueueItem] = []
+    var secondTeam: [QueueItem] = []
 }

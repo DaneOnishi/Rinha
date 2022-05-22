@@ -9,10 +9,9 @@ import SwiftUI
 
 struct __SetMatchView: View {
     
-    @State private var isHostButtonPressed = false
-    @State private var isJoinButtonPressed = false
-    @State private var isWatchMatchButtonPressed = false
     @State var state: MatchState
+    
+    @EnvironmentObject var coordinator: Coordinator
 
     var body: some View {
         ZStack {
@@ -35,18 +34,15 @@ struct __SetMatchView: View {
                     .frame(width: 250, height: 225, alignment: .center)
                     .padding()
                 
-                Button {
-                    isHostButtonPressed.toggle()
-                } label: {
-                    Image("Button")
-                        .resizable()
-                        .frame(width: 250, height: 90, alignment: .center)
-                }
                 
-                MainButton(text: state.switchButtonTitle) {
-                    print("Ravier")
-                }
-                .frame(width: 250)
+                    ButtonStyle(text: state.switchButtonTitle) {
+                        coordinator.switchScreen(to: .game)
+                    }.disabled(state == .twoPlayer)
+                    .opacity((state == .twoPlayer ) ? 0.3 : 1)
+                    
+                    ButtonStyle(text: "Watch Match") {
+                        coordinator.switchScreen(to: .teamSelection)
+                    }
             }
         }
     }
@@ -84,7 +80,7 @@ enum MatchState {
         case .onePlayer:
             return "Defy User"
         case .twoPlayer:
-            return "U can't"
+            return "Defy User"
         }
     }
     

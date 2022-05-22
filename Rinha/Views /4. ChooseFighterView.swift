@@ -18,6 +18,8 @@ struct ChooseFighterView: View {
     
     @State var currentIndex: Int = 0
     
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
         
         ZStack {
@@ -60,8 +62,10 @@ struct ChooseFighterView: View {
                     .frame(height: 138)
                 }
                 
-                ButtonStyle()
-                
+                ButtonStyle(text: "Choose") {
+                    coordinator.switchScreen(to: .setMatch)
+                }
+
                 Spacer()
                     .frame(height: 60)
                 
@@ -78,9 +82,7 @@ struct ChooseFighterView: View {
                 }
             }
         }
-        
     }
-    
 }
 
 

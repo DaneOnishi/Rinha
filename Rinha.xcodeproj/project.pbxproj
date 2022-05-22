@@ -16,7 +16,7 @@
 		0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE3107282DBD9300FCF95A /* BackButton.swift */; };
 		0EEE310A282DC2B700FCF95A /* 6. TeamSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */; };
 		0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */; };
-		41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3.ConnectingTableView.swift */; };
+		41014559282B580900268C53 /* 3. ConnectingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41014558282B580900268C53 /* 3. ConnectingTableView.swift */; };
 		4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101455B282B5C5600268C53 /* AnimatedText+.swift */; };
 		410A442B28341365005C527B /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410A44292834135D005C527B /* PressStart2P.ttf */; };
 		4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 5. SetMatchView.swift */; };
@@ -34,6 +34,8 @@
 		41986FEA2839C404006BD45E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FE92839C404006BD45E /* Character.swift */; };
 		41986FEC2839C7D2006BD45E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FEB2839C7D2006BD45E /* SessionManager.swift */; };
 		41986FEE2839D218006BD45E /* 7. QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FED2839D218006BD45E /* 7. QueueView.swift */; };
+		41986FF02839E88F006BD45E /* QueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FEF2839E88F006BD45E /* QueueItem.swift */; };
+		41986FF22839EC77006BD45E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41986FF12839EC77006BD45E /* Coordinator.swift */; };
 		41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE3E282988F4000921EA /* RinhaApp.swift */; };
 		41AEEE41282988F4000921EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEEE40282988F4000921EA /* ContentView.swift */; };
 		41AEEE43282988F6000921EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEEE42282988F6000921EA /* Assets.xcassets */; };
@@ -70,7 +72,7 @@
 		0EEE3107282DBD9300FCF95A /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. TeamSelectionView.swift"; sourceTree = "<group>"; };
 		0EFD8BB7282EE8E5008078A0 /* ScaledBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledBezier.swift; sourceTree = "<group>"; };
-		41014558282B580900268C53 /* 3.ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ConnectingTableView.swift; sourceTree = "<group>"; };
+		41014558282B580900268C53 /* 3. ConnectingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3. ConnectingTableView.swift"; sourceTree = "<group>"; };
 		4101455B282B5C5600268C53 /* AnimatedText+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimatedText+.swift"; sourceTree = "<group>"; };
 		410A44292834135D005C527B /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
 		4137A2272832D18600AEB704 /* 5. SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. SetMatchView.swift"; sourceTree = "<group>"; };
@@ -87,6 +89,8 @@
 		41986FE92839C404006BD45E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		41986FEB2839C7D2006BD45E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		41986FED2839D218006BD45E /* 7. QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. QueueView.swift"; sourceTree = "<group>"; };
+		41986FEF2839E88F006BD45E /* QueueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueItem.swift; sourceTree = "<group>"; };
+		41986FF12839EC77006BD45E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		41AEEE3B282988F4000921EA /* Rinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEEE3E282988F4000921EA /* RinhaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinhaApp.swift; sourceTree = "<group>"; };
 		41AEEE40282988F4000921EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -253,7 +257,7 @@
 				41986FE528398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift */,
 				41986FE72839812E006BD45E /* 2.1.2. LeaderboardCheerUpGodView.swift */,
 				419082A2282F4CB200D1771E /* 2.2. InformationView.swift */,
-				41014558282B580900268C53 /* 3.ConnectingTableView.swift */,
+				41014558282B580900268C53 /* 3. ConnectingTableView.swift */,
 				0EE4BF09282AEEDF003BF45E /* 4. ChooseFighterView.swift */,
 				4137A2272832D18600AEB704 /* 5. SetMatchView.swift */,
 				0EEE3109282DC2B700FCF95A /* 6. TeamSelectionView.swift */,
@@ -276,6 +280,8 @@
 				41D86A2C2838276D00D2E6E0 /* CharacterInformation.swift */,
 				41986FE128393A1F006BD45E /* LeaderboardEntry.swift */,
 				41986FEB2839C7D2006BD45E /* SessionManager.swift */,
+				41986FEF2839E88F006BD45E /* QueueItem.swift */,
+				41986FF12839EC77006BD45E /* Coordinator.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 			files = (
 				41986FE628398114006BD45E /* 2.1.1. LeaderboardMatchMasterView.swift in Sources */,
 				41AEEE6A282A0438000921EA /* 1. SplashScreenView.swift in Sources */,
+				41986FF22839EC77006BD45E /* Coordinator.swift in Sources */,
 				41986FEC2839C7D2006BD45E /* SessionManager.swift in Sources */,
 				41986FEA2839C404006BD45E /* Character.swift in Sources */,
 				0EFD8BB8282EE8E5008078A0 /* ScaledBezier.swift in Sources */,
@@ -378,9 +385,10 @@
 				4181F1DE2836E110009D1127 /* GameScene.swift in Sources */,
 				41986FE428398032006BD45E /* LeaderboardCell.swift in Sources */,
 				41B0DA302833422000F5A82C /* DojoView.swift in Sources */,
+				41986FF02839E88F006BD45E /* QueueItem.swift in Sources */,
 				4101455C282B5C5600268C53 /* AnimatedText+.swift in Sources */,
 				41AEEE67282A016E000921EA /* 2. MainMenuView.swift in Sources */,
-				41014559282B580900268C53 /* 3.ConnectingTableView.swift in Sources */,
+				41014559282B580900268C53 /* 3. ConnectingTableView.swift in Sources */,
 				0EEE3106282D96DB00FCF95A /* MatchView.swift in Sources */,
 				0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,

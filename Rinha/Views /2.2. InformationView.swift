@@ -13,6 +13,7 @@ struct InformationView: View {
     
     let chars = Character.allCases.map { $0.carouselImageSmall }
     @State var currentIndex: Int = 0
+    @EnvironmentObject var coordinator: Coordinator
     
     var characters: [CharacterInformation] = [
         CharacterInformation(character: "", name: "Rata Loka", text: ""),

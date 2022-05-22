@@ -9,6 +9,14 @@ import SwiftUI
 import SpriteKit
 
 class DoorsAnimation: SKScene {
+    
+    static func buildDoorAnimationScene() -> DoorsAnimation {
+        let scene = DoorsAnimation(fileNamed: "Doors")!
+        scene.scaleMode = .resizeFill
+        scene.backgroundColor = .clear
+        return scene
+    }
+    
     var leftDoor: SKSpriteNode {
         childNode(withName: "Door-Left") as! SKSpriteNode
     }
@@ -20,51 +28,38 @@ class DoorsAnimation: SKScene {
     var rightDoorInitialPosition: CGPoint!
     var rightDoorFinalPosition: CGPoint!
     
-    
-    override func didMove(to view: SKView) {
-//        leftDoor = ()
-//        rightDoor = ()
-//        
-//        leftDoor.size.height = size.height
-//        leftDoor.size.width = size.width / 2
-//        rightDoor.size.height = size.height
-//        rightDoor.size.width = size.width / 2
-        performDoorAnimation()
-    }
-    
-    func moveLeftDoor() {
-        leftDoorInitialPosition = CGPoint(x: -size.width, y: 0)
-        leftDoorFinalPosition = CGPoint(x: -size.width/8, y: 0)
-        leftDoor.position = leftDoorInitialPosition
+}
+
+extension DoorsAnimation: CoordinatorTransitioner {
+    func triggerTransition(duration: Double, onStart: (() -> ())?, onMiddle: (() -> ())?, onEnd: (() -> ())?) {
+        onStart?()
         
-        let move1 = SKAction.move(to: leftDoorFinalPosition, duration: 0.5)
-        let move2 = SKAction.wait(forDuration: 0.5)
-        let move3 = SKAction.move(to: leftDoorInitialPosition, duration: 0.5)
-        
-        let sequence = SKAction.sequence([move1, move2, move3])
-        leftDoor.run(sequence)
-    }
-    
-    func moveRightDoor() {
         rightDoorInitialPosition = CGPoint(x: size.width, y: 0)
-        rightDoorFinalPosition = CGPoint(x: size.width / 8, y: 0)
+        rightDoorFinalPosition = CGPoint(x: size.width / 2.65, y: 0)
         rightDoor.position = rightDoorInitialPosition
         
-        let move1 = SKAction.move(to: rightDoorFinalPosition, duration: 0.5)
-        let move2 = SKAction.wait(forDuration: 0.5)
-        let move3 = SKAction.move(to: rightDoorInitialPosition, duration: 0.5)
+        let rightMove1 = SKAction.move(to: rightDoorFinalPosition, duration: duration/3)
+        let rightMove2 = SKAction.wait(forDuration: duration/3)
+        let rightMove3 = SKAction.move(to: rightDoorInitialPosition, duration: duration/3)
         
-        let sequence = SKAction.sequence([move1, move2, move3])
-        rightDoor.run(sequence)
-    }
+        let rightSequence = SKAction.sequence([rightMove1, rightMove2, rightMove3])
+        rightDoor.run(rightSequence)
     
-    func performDoorAnimation() {
-        moveLeftDoor()
-        moveRightDoor()
-    }
-    
-    override func update(_ currentTime: TimeInterval) {
+        leftDoorInitialPosition = CGPoint(x: -size.width, y: 0)
+        leftDoorFinalPosition = CGPoint(x: -size.width / 2.65, y: 0)
+        leftDoor.position = leftDoorInitialPosition
         
+        let leftMove1 = SKAction.move(to: leftDoorFinalPosition, duration: duration/3)
+        let leftMove2 = SKAction.wait(forDuration: duration/3)
+        let leftMove3 = SKAction.move(to: leftDoorInitialPosition, duration: duration/3)
+        
+        let leftSequence = SKAction.sequence([leftMove2, leftMove3])
+        
+        leftDoor.run(leftMove1) {
+            onMiddle?()
+            
+            self.leftDoor.run(leftSequence)
+        }
     }
 }
 

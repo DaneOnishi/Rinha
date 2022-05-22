@@ -10,143 +10,76 @@ import AVFoundation
 import SpriteKit
 
 struct MainMenuView: View {
-    @State private var startGame = false
+    
+    @EnvironmentObject var coordinator: Coordinator
+    
     @State private var isMusicRunning = true
-    @State private var showInfo = false
-    @State private var showSettings = false
     
-    
-    static func buildDoorAnimationScene() -> DoorsAnimation {
-        let scene = DoorsAnimation(fileNamed: "Doors")!
-        scene.scaleMode = .resizeFill
-        scene.backgroundColor = .clear
-        return scene
-    }
     let music =  SFXMusicSingleton.shared
-    var doorsScene = Self.buildDoorAnimationScene()
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                ZStack(alignment: .center) {
-                    Image("Background-2")
-                        .resizable()
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    
-                    VStack {
-                        SpriteView(scene: DojoView.buildScene(actionPerformed: { action, scene in
-                            switch action {
-                            case .start:
-                                startGame = true
-                            case .sound:
-                                if isMusicRunning {
-                                    music.pauseMenuMusic()
-                                    scene.changeSoundButtonImage(to: "No-Sound-Button")
-                                } else {
-                                    music.playMenuMusic()
-                                    scene.changeSoundButtonImage(to: "Sound-Button")
-                                }
-                                isMusicRunning.toggle()
-                                
-                                
-                                
-                            case .info:
-                                doorsScene.performDoorAnimation()
-                            case .settings:
-                                showSettings = true
-                            }
-                        }), options: [.allowsTransparency])
+        ZStack {
+            ZStack(alignment: .center) {
+                Image("Background-2")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                
+                
+                VStack {
+                    SpriteView(scene: DojoView.buildScene(actionPerformed: nil), options: [.allowsTransparency])
                         .background(Color.clear)
-                        
-                    }.padding(.bottom, 200)
+                }.padding(.bottom, 200)
+                
+                VStack {
+                    Button {
+                        coordinator.switchScreen(to: .connecting)
+                    } label: {
+                        Image("Start-Button")
+                            .resizable()
+                            .frame(width: 75, height: 75, alignment: .center)
+                    }.padding(-37)
                     
-                    
-                    VStack {
-                                            Button {
-                                                startGame.toggle()
-                                            } label: {
-                                                Image("Start-Button")
-                                                    .resizable()
-                                                    .frame(width: 75, height: 75, alignment: .center)
-                                            }.padding(-37)
-                        
-                                            HStack {
-                                                Button {
-//                                                    showInfo.toggle()
-                                                    doorsScene.performDoorAnimation()
-                                                } label: {
-                                                    Image("Details-Button")
-                                                        .resizable()
-                                                        .frame(width: 75, height: 75, alignment: .center)
-                                                }
-                        
-                                                Button {
-                                                    showSettings.toggle()
-                                                } label: {
-                                                    Image("Details-Button")
-                                                        .resizable()
-                                                        .frame(width: 75, height: 75, alignment: .center)
-                                                }
-                                            }.padding(-3)
-                        
-                                            Button {
-                                                if isMusicRunning {
-                                                    music.pauseMenuMusic()
-                                                 } else {
-                                                     music.playMenuMusic()
-                                                 }
-                        
-                                                isMusicRunning.toggle()
-                                            } label: {
-                                                if isMusicRunning {
-                                                    Image("No-Sound-Button")
-                                                        .resizable()
-                                                        .frame(width: 75, height: 75, alignment: .center)
-                                                } else {
-                                                    Image("Sound-Button")
-                                                        .resizable()
-                                                        .frame(width: 75, height: 75, alignment: .center)
-                                                }
-                        
-                                            }.padding(-37)
-                        
-                        
-                        NavigationLink(isActive: $startGame) {
-                            __ConnectingTableView()
+                    HStack {
+                        Button {
+                            coordinator.switchScreen(to: .infoView)
                         } label: {
-                            EmptyView()
+                            Image("Details-Button")
+                                .resizable()
+                                .frame(width: 75, height: 75, alignment: .center)
                         }
                         
-                        NavigationLink(isActive: $showInfo) {
-                            InformationView()
+                        Button {
+                            coordinator.switchScreen(to: .leaderboard)
                         } label: {
-                            EmptyView()
+                            Image("Details-Button")
+                                .resizable()
+                                .frame(width: 75, height: 75, alignment: .center)
+                        }
+                    }.padding(-3)
+                    
+                    Button {
+                        if isMusicRunning {
+                            music.pauseMenuMusic()
+                        } else {
+                            music.playMenuMusic()
                         }
                         
-                        NavigationLink(isActive: $showSettings) {
-                            __ConnectingTableView()
-                        } label: {
-                            EmptyView()
+                        isMusicRunning.toggle()
+                    } label: {
+                        if isMusicRunning {
+                            Image("No-Sound-Button")
+                                .resizable()
+                                .frame(width: 75, height: 75, alignment: .center)
+                        } else {
+                            Image("Sound-Button")
+                                .resizable()
+                                .frame(width: 75, height: 75, alignment: .center)
                         }
-                    }.padding(.top, 300)
-                }.onAppear{
-                    
-                   // music.playMenuMusic()
-                    
-                }
-                SpriteView(scene: doorsScene, options: [.allowsTransparency])
-                    .ignoresSafeArea()
-                    .background(Color.clear)
-                    .allowsHitTesting(false)
+                        
+                    }.padding(-37)
+                }.padding(.top, 300)
             }
-            .navigationViewStyle(.stack)
-            
-            
-            //                .scaledToFill()
-//                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
-        
     }
 }
 

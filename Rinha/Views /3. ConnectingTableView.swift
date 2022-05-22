@@ -9,6 +9,7 @@ import SwiftUI
 
 struct __ConnectingTableView: View {
     @State var text: String = "..."
+    @EnvironmentObject var coordinator: Coordinator
     var body: some View {
         VStack {
             ZStack {
@@ -29,6 +30,10 @@ struct __ConnectingTableView: View {
                         
                     }
                 }
+            }
+        }.onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                coordinator.switchScreen(to: .chooseFighter)
             }
         }
     }
