@@ -19,6 +19,8 @@ struct GameView: View {
     @State var isMagnetButtonEnabled = false
     @State var isGoalButtonEnabled = false
     
+    @State var rectangleOpen = false
+    
     @State var buttonText: String = "empty"
     var countdownScene = CountdownScene.buildCountdownScene()
     var leaderboardScene = RealTimeLeaderboardScene.buildLeaderboardAnimation()
@@ -32,7 +34,7 @@ struct GameView: View {
                 EmptyView()
             }
             
-            ZStack(alignment: .top) {
+            ZStack(alignment: .center) {
                 MyARView()
                     .edgesIgnoringSafeArea(.all)
                 SpecialEffectsView()
@@ -103,6 +105,55 @@ struct GameView: View {
                         }
                     }.padding(.bottom, 0)
                 }
+                
+                
+//                   SpriteView(scene: leaderboardScene, options: [.allowsTransparency])
+//                       .ignoresSafeArea()
+//                       .background(Color.clear)
+                
+                HStack {
+                    Spacer()
+                    ZStack(alignment: .leading) {
+                        
+                        ZStack(alignment: .topTrailing) {
+                            Image("Menu-Leaderboard")
+                                .resizable()
+                                .frame(width: 136, height: 422, alignment: .trailing)
+                                .onTapGesture {
+                                    self.rectangleOpen.toggle()
+                                }
+                            
+                            HStack(alignment: .top) {
+                                VStack(alignment: .trailing) {
+                                    Circle()
+                                        .frame(width: 48, height: 48, alignment: .center)
+                                        .foregroundColor(Color.red)
+                                    Circle()
+                                        .frame(width: 48, height: 48, alignment: .center)
+                                        .foregroundColor(Color.red)
+                                    Circle()
+                                        .frame(width: 48, height: 48, alignment: .center)
+                                        .foregroundColor(Color.blue)
+                                        
+                                }
+                            }
+                            .padding(.top, 70)
+                            .padding(.trailing, 30)
+                            
+                            
+                        }
+                        
+                        Image("Arrow-Button")
+                            .animation(.easeInOut, value: self.rectangleOpen)
+                            .rotationEffect(Angle(degrees: self.rectangleOpen ? 0 : 180))
+                            .padding(.top, 22)
+                            .padding(.leading, 8)
+                    }
+                    .padding(.trailing, self.rectangleOpen ? 0 : -80)
+                    .animation(.easeInOut, value: self.rectangleOpen)
+                    
+                }
+                
              
                 SpriteView(scene: countdownScene, options: [.allowsTransparency])
                     .ignoresSafeArea()

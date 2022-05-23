@@ -22,6 +22,15 @@ struct Background: View {
             
             ImageOverlay(text: text ,textSize: textSize)
                 .frame(maxWidth: 210, minHeight: 70, alignment: .center)
+            
+            
+                BackButton()
+                .frame(width: 50, height: 50, alignment: .leading)
+                .padding(.top, 730)
+                .padding(.trailing, 315)
+                
+                    
+            
         }
     }
 }

@@ -24,7 +24,7 @@ class RealTimeLeaderboardScene: SKScene {
     }
     
     var arrowButton: SKSpriteNode {
-        childNode(withName: "Arrow-Button") as! SKSpriteNode
+        sideMenu.childNode(withName: "Arrow-Button") as! SKSpriteNode
     }
     
     var initialPosition: CGPoint!
@@ -48,26 +48,26 @@ class RealTimeLeaderboardScene: SKScene {
     }
     
     func openMenuAnimation() {
-        initialPosition = CGPoint(x: 243, y: 30)
+        initialPosition = CGPoint(x: 243, y: 0)
         sideMenu.position = initialPosition
         finalPosition = CGPoint(x: 93, y: 0)
 
         let move1 = SKAction.move(to: finalPosition, duration: 0.5)
         sideMenu.run(move1)
         
-        let moveArrow = SKAction.rotate(byAngle: 180, duration: 0.5)
+        let moveArrow = SKAction.rotate(toAngle: 0, duration: 0.5)
         arrowButton.run(moveArrow)
     }
     
     func closeMenuAnimation() {
         initialPosition = CGPoint(x: 93, y: 0)
         sideMenu.position = initialPosition
-        finalPosition = CGPoint(x: 243, y: 30)
+        finalPosition = CGPoint(x: 243, y: 0)
 
         let move1 = SKAction.move(to: finalPosition, duration: 0.5)
         sideMenu.run(move1)
         
-        let moveArrow = SKAction.rotate(byAngle: 180, duration: 0.5)
+        let moveArrow = SKAction.rotate(toAngle: .pi, duration: 0.5)
         arrowButton.run(moveArrow)
     }
     
@@ -83,17 +83,21 @@ class RealTimeLeaderboardScene: SKScene {
     }
     
     func touchDown(atPoint pos : CGPoint) {
-        if arrowButton.contains(pos) {
-            isArrowButtonPressed.toggle()
+        
+        
+        if arrowButton.contains(sideMenu.convert(pos, from: self)) {
+            isArrowButtonPressed = !isArrowButtonPressed
+            
+            if isArrowButtonPressed {
+                openMenuAnimation()
+            } else if !isArrowButtonPressed {
+                closeMenuAnimation()
+            }
         }
+       
     }
     
     override func update(_ currentTime: TimeInterval) {
-        if isArrowButtonPressed {
-            openMenuAnimation()
-        } else if !isArrowButtonPressed {
-            closeMenuAnimation()
-        }
     }
 }
 

@@ -50,7 +50,7 @@ struct LeaderboardCell: View {
                     .padding(.leading, 40)
                 
             }.padding(.horizontal)
-        }.padding(.top, 30)
+        }.padding(.top, 15)
     }
 }
 
