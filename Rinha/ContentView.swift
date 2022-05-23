@@ -6,10 +6,46 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct ContentView: View {
+    @StateObject var coordinator = Coordinator()
+    
+    var doorScene = DoorsAnimation.buildDoorAnimationScene()
+    
     var body: some View {
-        SplashScreenView()
+        ZStack {
+            
+            switch coordinator.currentScreen {
+            case .splash:
+                SplashScreenView()
+            case .mainMenu:
+                MainMenuView()
+            case .leaderboard:
+                Leaderboard()
+            case .infoView:
+                InformationView()
+            case .connecting:
+                __ConnectingTableView()
+            case .chooseFighter:
+                ChooseFighterView()
+            case .setMatch:
+                __SetMatchView(state: .noPlayer)
+            case .teamSelection:
+                TeamSelectionView()
+            case .game:
+                GameView()
+            }
+            
+            
+            SpriteView(scene: doorScene, options: [.allowsTransparency])
+                .ignoresSafeArea()
+                .background(Color.clear)
+                .allowsHitTesting(false)
+        }.environmentObject(coordinator)
+        .onAppear {
+            coordinator.transitioner = doorScene
+        }
     }
 }
 

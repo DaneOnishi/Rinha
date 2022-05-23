@@ -100,6 +100,10 @@ class SFXMusicSingleton: NSObject, AVAudioPlayerDelegate {
         playSound(soundFileName: "Meerkat-Sound", loop: false)
     }
     
+    func playCharacterSound(character: Character) {
+        playSound(soundFileName: character.animalSound, loop: false)
+    }
+    
     func pauseMusic(soundFileName: String) {
         guard let bundle = Bundle.main.path(forResource: soundFileName, ofType: "mp3")
         else{ return }

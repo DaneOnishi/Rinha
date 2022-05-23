@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct BackButton: View {
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
         Button(action: {
             print("Button pressed!")
+            coordinator.switchBack()
         }) {
             Image("Back-Button")
                 .resizable()

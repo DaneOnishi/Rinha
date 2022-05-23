@@ -9,23 +9,24 @@ import SwiftUI
 
 struct ButtonStyle: View {
     @State var text = "Continue"
+    @State var onPress: (() -> ())? = nil
+    
     var body: some View {
         Button(action: {
             print("Button pressed!")
+            onPress?()
         }) {
             Image("Button")
                 .resizable()
                 .scaledToFill()
-                .frame(minWidth: 260, minHeight: 100)
-                .padding(50)
+                .frame(minWidth: 220, minHeight: 80)
+                .padding(.horizontal, 50)
                 .overlay(ImageOverlay(text: text, color: "WhiteFontColor"), alignment: .center)
             
         }
-        .frame(height: 124)
+        .frame(height: 100)
         .contentShape(Rectangle())
     }
-    
-    
 }
 
 

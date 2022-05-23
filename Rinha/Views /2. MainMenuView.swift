@@ -7,24 +7,32 @@
 
 import SwiftUI
 import AVFoundation
+import SpriteKit
 
 struct MainMenuView: View {
-    @State private var startGame = false
+    
+    @EnvironmentObject var coordinator: Coordinator
+    
     @State private var isMusicRunning = true
-    @State private var showInfo = false
-    @State private var showSettings = false
     
     let music =  SFXMusicSingleton.shared
-
+    
     var body: some View {
-        NavigationView {
+        ZStack {
             ZStack(alignment: .center) {
                 Image("Background-2")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
+                
+                
+                VStack {
+                    SpriteView(scene: DojoView.buildScene(actionPerformed: nil), options: [.allowsTransparency])
+                        .background(Color.clear)
+                }.padding(.bottom, 200)
+                
                 VStack {
                     Button {
-                        startGame.toggle()
+                        coordinator.switchScreen(to: .connecting)
                     } label: {
                         Image("Start-Button")
                             .resizable()
@@ -33,7 +41,7 @@ struct MainMenuView: View {
                     
                     HStack {
                         Button {
-                            showInfo.toggle()
+                            coordinator.switchScreen(to: .infoView)
                         } label: {
                             Image("Details-Button")
                                 .resizable()
@@ -41,7 +49,7 @@ struct MainMenuView: View {
                         }
                         
                         Button {
-                            showSettings.toggle()
+                            coordinator.switchScreen(to: .leaderboard)
                         } label: {
                             Image("Details-Button")
                                 .resizable()
@@ -52,9 +60,9 @@ struct MainMenuView: View {
                     Button {
                         if isMusicRunning {
                             music.pauseMenuMusic()
-                         } else {
-                             music.playMenuMusic()
-                         }
+                        } else {
+                            music.playMenuMusic()
+                        }
                         
                         isMusicRunning.toggle()
                     } label: {
@@ -67,32 +75,9 @@ struct MainMenuView: View {
                                 .resizable()
                                 .frame(width: 75, height: 75, alignment: .center)
                         }
-                       
+                        
                     }.padding(-37)
-                    
-                    
-                    NavigationLink(isActive: $startGame) {
-                        __ConnectingTableView()
-                    } label: {
-                        EmptyView()
-                    }
-                    
-                    NavigationLink(isActive: $showInfo) {
-                        InformationView()
-                    } label: {
-                        EmptyView()
-                    }
-                    
-                    NavigationLink(isActive: $showSettings) {
-                        __ConnectingTableView()
-                    } label: {
-                        EmptyView()
-                    }
-                }
-            }.onAppear{
-                
-                    music.playMenuMusic()
-               
+                }.padding(.top, 300)
             }
         }
     }
