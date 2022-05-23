@@ -24,6 +24,8 @@
 		411EDC72283AC6A2001A2EAC /* Confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 411EDC71283AC6A2001A2EAC /* Confetti.json */; };
 		411EDC74283AC7BB001A2EAC /* Fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 411EDC73283AC7BB001A2EAC /* Fireworks.json */; };
 		411EDC76283ACF7A001A2EAC /* SpecialEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC75283ACF7A001A2EAC /* SpecialEffectsView.swift */; };
+		411EDC78283BB30F001A2EAC /* RealTimeLeaderboard.sks in Resources */ = {isa = PBXBuildFile; fileRef = 411EDC77283BB30F001A2EAC /* RealTimeLeaderboard.sks */; };
+		411EDC7A283BB339001A2EAC /* RealTimeLeaderboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC79283BB339001A2EAC /* RealTimeLeaderboardScene.swift */; };
 		4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 5. SetMatchView.swift */; };
 		417D57D2283689E100C32993 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 417D57D1283689E100C32993 /* Lottie */; };
 		417D57D428368A2400C32993 /* Fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 417D57D328368A2400C32993 /* Fire.json */; };
@@ -86,6 +88,8 @@
 		411EDC71283AC6A2001A2EAC /* Confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confetti.json; sourceTree = "<group>"; };
 		411EDC73283AC7BB001A2EAC /* Fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fireworks.json; sourceTree = "<group>"; };
 		411EDC75283ACF7A001A2EAC /* SpecialEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectsView.swift; sourceTree = "<group>"; };
+		411EDC77283BB30F001A2EAC /* RealTimeLeaderboard.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RealTimeLeaderboard.sks; sourceTree = "<group>"; };
+		411EDC79283BB339001A2EAC /* RealTimeLeaderboardScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeLeaderboardScene.swift; sourceTree = "<group>"; };
 		4137A2272832D18600AEB704 /* 5. SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. SetMatchView.swift"; sourceTree = "<group>"; };
 		417D57D328368A2400C32993 /* Fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fire.json; sourceTree = "<group>"; };
 		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -187,7 +191,9 @@
 				411EDC6D283ABB53001A2EAC /* CountdownScene.swift */,
 				411EDC75283ACF7A001A2EAC /* SpecialEffectsView.swift */,
 				41B0DA392833DB0200F5A82C /* DoorsAnimation.swift */,
+				411EDC79283BB339001A2EAC /* RealTimeLeaderboardScene.swift */,
 				411EDC6F283AC23C001A2EAC /* Countdown.sks */,
+				411EDC77283BB30F001A2EAC /* RealTimeLeaderboard.sks */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */,
 				411EDC70283AC23C001A2EAC /* Countdown.sks in Resources */,
 				41AEEE552829FBC3000921EA /* Meerkat-Sound.mp3 in Resources */,
+				411EDC78283BB30F001A2EAC /* RealTimeLeaderboard.sks in Resources */,
 				411EDC72283AC6A2001A2EAC /* Confetti.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +435,7 @@
 				0EEE310A282DC2B700FCF95A /* 6. TeamSelectionView.swift in Sources */,
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
+				411EDC7A283BB339001A2EAC /* RealTimeLeaderboardScene.swift in Sources */,
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
 				0EE4BF0A282AEEDF003BF45E /* 4. ChooseFighterView.swift in Sources */,
 				0E20109B282C3974009732F9 /* Background.swift in Sources */,

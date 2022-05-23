@@ -21,6 +21,7 @@ struct GameView: View {
     
     @State var buttonText: String = "empty"
     var countdownScene = CountdownScene.buildCountdownScene()
+    var leaderboardScene = RealTimeLeaderboardScene.buildLeaderboardAnimation()
     
     var body: some View {
         
@@ -35,7 +36,7 @@ struct GameView: View {
                 MyARView()
                     .edgesIgnoringSafeArea(.all)
                 SpecialEffectsView()
-                    
+                
                 
 //                    .edgesIgnoringSafeArea(.all)
                     
@@ -54,6 +55,7 @@ struct GameView: View {
                     Spacer()
                     
                     ZStack {
+                        
                         Image("Bottom-Component")
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width, height: 150, alignment: .center)
@@ -100,12 +102,13 @@ struct GameView: View {
                                 .opacity((isGoalButtonEnabled) ? 1 : 0.3)
                         }
                     }.padding(.bottom, 0)
-                    
                 }
+             
                 SpriteView(scene: countdownScene, options: [.allowsTransparency])
                     .ignoresSafeArea()
                     .background(Color.clear)
                     .allowsHitTesting(false)
+                
             }
         }
         .ignoresSafeArea()
