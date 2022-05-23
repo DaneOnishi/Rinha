@@ -68,6 +68,11 @@
 		41D86A292837E34A00D2E6E0 /* 2.1. Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */; };
 		41D86A2B2837E54700D2E6E0 /* WinnerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */; };
 		41D86A2D2838276D00D2E6E0 /* CharacterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D86A2C2838276D00D2E6E0 /* CharacterInformation.swift */; };
+		AFED5BC22832D06A007B81D7 /* NWConnection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED5BBC2832D06A007B81D7 /* NWConnection+Extension.swift */; };
+		AFED5BC32832D06A007B81D7 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED5BBE2832D06A007B81D7 /* WebSocketConnection.swift */; };
+		AFED5BC42832D06A007B81D7 /* NWWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED5BC12832D06A007B81D7 /* NWWebSocket.swift */; };
+		AFED5BC62832D086007B81D7 /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED5BC52832D086007B81D7 /* WebSocketClient.swift */; };
+		AFED5BC82832D40F007B81D7 /* mCastBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED5BC72832D40F007B81D7 /* mCastBrowser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +137,12 @@
 		41D86A282837E34A00D2E6E0 /* 2.1. Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.1. Leaderboard.swift"; sourceTree = "<group>"; };
 		41D86A2A2837E54700D2E6E0 /* WinnerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerCard.swift; sourceTree = "<group>"; };
 		41D86A2C2838276D00D2E6E0 /* CharacterInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInformation.swift; sourceTree = "<group>"; };
+		AFED5BBC2832D06A007B81D7 /* NWConnection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NWConnection+Extension.swift"; sourceTree = "<group>"; };
+		AFED5BBE2832D06A007B81D7 /* WebSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConnection.swift; sourceTree = "<group>"; };
+		AFED5BC12832D06A007B81D7 /* NWWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWWebSocket.swift; sourceTree = "<group>"; };
+		AFED5BC52832D086007B81D7 /* WebSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		AFED5BC72832D40F007B81D7 /* mCastBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mCastBrowser.swift; sourceTree = "<group>"; };
+		AFED5BC92832D541007B81D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,8 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				417D57D528368A8600C32993 /* Animations */,
-				0E20109C282C4185009732F9 /* Info.plist */,
 				0EE4BF0B282AF5C8003BF45E /* Views */,
+				AFED5BC92832D541007B81D7 /* Info.plist */,
+				AFED5BB92832D04B007B81D7 /* Networking */,
 				4101455A282B5C0700268C53 /* Extensions */,
 				41AEEE632829FFEF000921EA /* Views  */,
 				41AEEE5E2829FF76000921EA /* Design System */,
@@ -308,6 +320,58 @@
 				41986FF12839EC77006BD45E /* Coordinator.swift */,
 			);
 			path = "View Model";
+      sourceTree = "<group>";
+    };
+		AFED5BB92832D04B007B81D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFED5BBA2832D06A007B81D7 /* NWWebSocket */,
+				AFED5BC72832D40F007B81D7 /* mCastBrowser.swift */,
+				AFED5BC52832D086007B81D7 /* WebSocketClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AFED5BBA2832D06A007B81D7 /* NWWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				AFED5BBB2832D06A007B81D7 /* Extension */,
+				AFED5BBD2832D06A007B81D7 /* Protocol */,
+				AFED5BBF2832D06A007B81D7 /* Model */,
+			);
+			path = NWWebSocket;
+			sourceTree = "<group>";
+		};
+		AFED5BBB2832D06A007B81D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AFED5BBC2832D06A007B81D7 /* NWConnection+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AFED5BBD2832D06A007B81D7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AFED5BBE2832D06A007B81D7 /* WebSocketConnection.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AFED5BBF2832D06A007B81D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFED5BC02832D06A007B81D7 /* Client */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFED5BC02832D06A007B81D7 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				AFED5BC12832D06A007B81D7 /* NWWebSocket.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +485,8 @@
 				0EEE3106282D96DB00FCF95A /* MatchView.swift in Sources */,
 				411EDC76283ACF7A001A2EAC /* SpecialEffectsView.swift in Sources */,
 				0E2010A0282C4AC5009732F9 /* ImageOverlay.swift in Sources */,
+				AFED5BC22832D06A007B81D7 /* NWConnection+Extension.swift in Sources */,
+				AFED5BC62832D086007B81D7 /* WebSocketClient.swift in Sources */,
 				41AEEE512829F943000921EA /* SFX.swift in Sources */,
 				41B0DA3A2833DB0200F5A82C /* DoorsAnimation.swift in Sources */,
 				4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */,
@@ -428,6 +494,8 @@
 				41AEEE622829FFE6000921EA /* Colors.swift in Sources */,
 				0EEE3108282DBD9300FCF95A /* BackButton.swift in Sources */,
 				41986FEE2839D218006BD45E /* 7. QueueView.swift in Sources */,
+				AFED5BC82832D40F007B81D7 /* mCastBrowser.swift in Sources */,
+				AFED5BC42832D06A007B81D7 /* NWWebSocket.swift in Sources */,
 				41AEEE602829FF89000921EA /* Fonts.swift in Sources */,
 				41986FF4283A0AC0006BD45E /* IfModifier.swift in Sources */,
 				41D86A2B2837E54700D2E6E0 /* WinnerCard.swift in Sources */,
@@ -444,6 +512,7 @@
 				41B0DA2B2832E18200F5A82C /* MainButton.swift in Sources */,
 				4181F1DC2836DF3E009D1127 /* 8. GameView.swift in Sources */,
 				41D86A2D2838276D00D2E6E0 /* CharacterInformation.swift in Sources */,
+				AFED5BC32832D06A007B81D7 /* WebSocketConnection.swift in Sources */,
 				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,12 +642,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Rinha/Preview Content\"";
-				DEVELOPMENT_TEAM = U77829B9P3;
+				DEVELOPMENT_TEAM = 3GTJZ8KSTX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rinha/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Rinha;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Chemical Factory needs access to the camera so it's able to display AR content";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Libera para achar a mesa ;-;";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -606,12 +676,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Rinha/Preview Content\"";
-				DEVELOPMENT_TEAM = U77829B9P3;
+				DEVELOPMENT_TEAM = 3GTJZ8KSTX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rinha/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Rinha;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Chemical Factory needs access to the camera so it's able to display AR content";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Libera para achar a mesa ;-;";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

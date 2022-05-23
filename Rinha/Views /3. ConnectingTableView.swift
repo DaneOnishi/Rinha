@@ -10,6 +10,14 @@ import SwiftUI
 struct __ConnectingTableView: View {
     @State var text: String = "..."
     @EnvironmentObject var coordinator: Coordinator
+    
+    private let serviceType   = "_airhockey._tcp"
+    private let netDomain = "local."
+    @State private var deviceName: String = ""
+    
+    @StateObject var bonjourBrowser = mCastBrowser()
+    @StateObject var wsClient = WebSocketClient()
+    
     var body: some View {
         VStack {
             ZStack {
@@ -23,17 +31,31 @@ struct __ConnectingTableView: View {
                         .frame(width: 260, height: 227, alignment: .center)
                         .padding()
                     
-                    SimpleAnimatedText("Connecting to table", charDuration: 0.06) {
-                        text in
+                    SimpleAnimatedText("Connecting to table...", charDuration: 0.06) { text in
                         text.bold()
                             .foregroundColor(.white)
-                        
                     }
+                    
+                    Text(wsClient.connectState)
                 }
             }
         }.onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 coordinator.switchScreen(to: .chooseFighter)
+            }
+        }
+        .onAppear {
+            self.bonjourBrowser.scan(typeOf: serviceType, domain: netDomain)
+        }
+        .onChange(of: self.bonjourBrowser.devices) { newDevices in
+            let newDevice = newDevices.last!
+            self.deviceName = newDevice.device
+            
+            self.wsClient.bonjourToSocket(called: self.deviceName, serviceTCPName: serviceType, serviceDomain: netDomain)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                print("Sending test socket")
+                self.wsClient.sendTestSocket()
             }
         }
     }
