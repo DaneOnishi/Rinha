@@ -504,6 +504,7 @@
 				41AEEE41282988F4000921EA /* ContentView.swift in Sources */,
 				41AEEE3F282988F4000921EA /* RinhaApp.swift in Sources */,
 				411EDC7A283BB339001A2EAC /* RealTimeLeaderboardScene.swift in Sources */,
+				419082A5282F4CEE00D1771E /* SettingsView.swift in Sources */,
 				0EE4BF12282C2726003BF45E /* ButtonStyle.swift in Sources */,
 				0EE4BF0A282AEEDF003BF45E /* 4. ChooseFighterView.swift in Sources */,
 				0E20109B282C3974009732F9 /* Background.swift in Sources */,
