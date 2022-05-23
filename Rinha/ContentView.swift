@@ -34,7 +34,10 @@ struct ContentView: View {
             case .teamSelection:
                 TeamSelectionView()
             case .game:
-                GameView()
+                GameView(userList: [
+                    realTimeLeaderboardEntry(position: 1, name: "Armando"),
+                    realTimeLeaderboardEntry(position: 2, name: "Blob")
+                ])
             }
             
             

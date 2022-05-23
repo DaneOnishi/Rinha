@@ -18,12 +18,12 @@ struct GameView: View {
     @State var isFanButtonEnabled = false
     @State var isMagnetButtonEnabled = false
     @State var isGoalButtonEnabled = false
-    
     @State var rectangleOpen = false
-    
     @State var buttonText: String = "empty"
     var countdownScene = CountdownScene.buildCountdownScene()
     var leaderboardScene = RealTimeLeaderboardScene.buildLeaderboardAnimation()
+    var userList: [realTimeLeaderboardEntry]
+    
     
     var body: some View {
         
@@ -124,21 +124,17 @@ struct GameView: View {
                                 }
                             
                             HStack(alignment: .top) {
+                                
                                 VStack(alignment: .trailing) {
-                                    Circle()
-                                        .frame(width: 48, height: 48, alignment: .center)
-                                        .foregroundColor(Color.red)
-                                    Circle()
-                                        .frame(width: 48, height: 48, alignment: .center)
-                                        .foregroundColor(Color.red)
-                                    Circle()
-                                        .frame(width: 48, height: 48, alignment: .center)
-                                        .foregroundColor(Color.blue)
-                                        
+                                    ForEach(userList, id: \.id) { entry in
+                                        RealTimeLeaderboardCell(userInfo: entry)
+                                    
+                               
+                                    }
                                 }
                             }
                             .padding(.top, 70)
-                            .padding(.trailing, 30)
+                            .padding(.trailing, 15)
                             
                             
                         }
@@ -179,7 +175,10 @@ class ARViewContainerViewModel: ObservableObject {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView( userList: [
+            realTimeLeaderboardEntry(position: 1, name: "Blob Sampaio"),
+            realTimeLeaderboardEntry(position: 2, name: "Sasha")
+        ])
     }
 }
 
