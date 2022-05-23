@@ -51,15 +51,15 @@ class CountdownScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
-            self.setupNumberAnimation(number: self.countdownNumberOne)
+            self.setupNumberAnimation(number: self.countdownNumberThree)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
                 self.setupNumberAnimation(number: self.countdownNumberTwo)
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.1) {
-                self.setupNumberAnimation(number: self.countdownNumberThree)
+                self.setupNumberAnimation(number: self.countdownNumberOne)
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.1) {

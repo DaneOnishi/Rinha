@@ -15,6 +15,9 @@ struct GameView: View {
     
     @State var navigated = false
     @StateObject var vm = ARViewContainerViewModel()
+    @State var isFanButtonEnabled = false
+    @State var isMagnetButtonEnabled = false
+    @State var isGoalButtonEnabled = false
     
     @State var buttonText: String = "empty"
     var countdownScene = CountdownScene.buildCountdownScene()
@@ -32,7 +35,10 @@ struct GameView: View {
                 MyARView()
                     .edgesIgnoringSafeArea(.all)
                 SpecialEffectsView()
-                    .edgesIgnoringSafeArea(.all)
+                    
+                
+//                    .edgesIgnoringSafeArea(.all)
+                    
                 
                 
                 VStack {
@@ -51,34 +57,47 @@ struct GameView: View {
                         Image("Bottom-Component")
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width, height: 150, alignment: .center)
+                            
                         HStack {
                             Button {
+                                SFXMusicSingleton.shared.playCharacterSound(character: SessionManager.shared.character ?? .fish)
                             } label: {
                                 Image("Cheer-Button")
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 75, height: 75, alignment: .center)
                             }.padding(.leading, 20)
+                                
                             
                             Button {
                             } label: {
                                 Image("Magnet")
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 80, height: 80, alignment: .center)
                             }.padding(5)
+                                .disabled(isMagnetButtonEnabled)
+                                .opacity((isMagnetButtonEnabled) ? 1 : 0.3)
                             
                             Button {
                             } label: {
                                 Image("Fan")
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 75, height: 75, alignment: .center)
                             }.padding(5)
-                            
+                                .disabled(isFanButtonEnabled)
+                                .opacity((isFanButtonEnabled) ? 1 : 0.3)
+
                             Button {
                             } label: {
                                 Image("Box")
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 75, height: 75, alignment: .center)
                             }.padding(.trailing, 20)
+                                .disabled(isGoalButtonEnabled)
+                                .opacity((isGoalButtonEnabled) ? 1 : 0.3)
                         }
                     }.padding(.bottom, 0)
                     

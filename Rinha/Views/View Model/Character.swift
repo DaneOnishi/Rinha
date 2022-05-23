@@ -10,10 +10,10 @@ import SwiftUI
 
 enum Character: String, CaseIterable {
     case rat = "rato1"
-    case llama = "rato2"
-    case redPanda = "rato3"
-    case meerkat = "rato4"
-    case fish = "rato5"
+    case llama = "rato4"
+    case redPanda = "rato5"
+    case duck = "rato3"
+    case fish = "rato2"
     
     var characterImage: String {
         //return "\(rawValue)"
@@ -56,8 +56,7 @@ enum Character: String, CaseIterable {
     }
     
     var characterInfoImage: String {
-        return "\(rawValue)"
-//        return "\(rawValue)_character_info_image"
+        return "\(rawValue)_character_info_image"
     }
     
     var animalSound: String {
@@ -68,7 +67,7 @@ enum Character: String, CaseIterable {
             return "Llama-Sound"
         case .redPanda:
             return "Red-Panda-Sound"
-        case .meerkat:
+        case .duck:
             return "Meerkat-Sound"
         case .fish:
             return "Fish-Sound"

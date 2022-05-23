@@ -33,7 +33,7 @@ struct SpecialEffectsView: View {
                     .padding(.trailing, CGFloat.random(in: -200...200))
                     .padding(.bottom, CGFloat.random(in: -500...500))
             }
-        }
+        }.frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
     }
 }
 
