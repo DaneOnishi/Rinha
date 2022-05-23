@@ -100,6 +100,14 @@ class SFXMusicSingleton: NSObject, AVAudioPlayerDelegate {
         playSound(soundFileName: "Meerkat-Sound", loop: false)
     }
     
+    func playBiteSound() {
+        playSound(soundFileName: "Bite-Sound", loop: false)
+    }
+    
+    func playPunchSound() {
+        playSound(soundFileName: "Punch-Sound", loop: false)
+    }
+    
     func playCharacterSound(character: Character) {
         playSound(soundFileName: character.animalSound, loop: false)
     }

@@ -11,7 +11,7 @@ import SwiftUI
 struct RinhaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FishFoodMinigameView()
         }
     }
 }
