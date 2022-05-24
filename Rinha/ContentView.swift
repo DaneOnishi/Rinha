@@ -35,7 +35,10 @@ struct ContentView: View {
                 TeamSelectionView()
             case .game:
                 GameView()
+            case .queue:
+                QueueView(state: SessionManager.shared.matchState!)
             }
+        
             
             
             SpriteView(scene: doorScene, options: [.allowsTransparency])

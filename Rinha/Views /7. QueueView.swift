@@ -21,30 +21,51 @@ struct QueueView: View {
                 VStack {
                     VStack {
                         HStack {
-                            Image("Big-Character-Circle")
-                                .resizable()
-                                .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3, alignment: .leading)
-                            Image("Big-Character-Circle")
-                                .resizable()
-                                .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3, alignment: .trailing)
+                            ZStack {
+                                Image("Big-Character-Circle")
+                                    .resizable()
+                                    .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3, alignment: .leading)
+                                Image(SessionManager.shared.player1.carouselImageSmall)
+                                    .resizable()
+                                    .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3, alignment: .leading)
+                                    .offset(y: 5)
+                            }
+                            ZStack {
+                                Image("Big-Character-Circle")
+                                    .resizable()
+                                    .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3, alignment: .trailing)
+                                Image(SessionManager.shared.player2.carouselImageSmall)
+                                    .resizable()
+                                    .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3, alignment: .leading)
+                                    .offset(y: 5)
+                            }
                         }
                         
                         
                         HStack {
                             VStack {
                                 ForEach(sessionManager.firstTeam, id: \.id) { entry in
-                                    Image("Small-Chracter-Placeholder")
-                                        .resizable()
-                                        .frame(width: UIScreen.main.bounds.width / 4, height: UIScreen.main.bounds.width / 4, alignment: .leading)
+                                    ZStack {
+                                        Image("Small-Chracter-Placeholder")
+                                            .resizable()
+                                            .frame(width: UIScreen.main.bounds.width / 4, height: UIScreen.main.bounds.width / 4, alignment: .leading)
+                                        Image(entry.imageName)
+                                            .resizable()
+                                            .frame(width: UIScreen.main.bounds.width / 4, height: UIScreen.main.bounds.width / 4, alignment: .leading)
+                                    }
                                     
                                 }
-                            }.padding(.trailing, 40)
+                            }.padding(.trailing, 140)
                             VStack {
                                 ForEach(sessionManager.secondTeam, id: \.id) { entry in
-                                    Image("Small-Chracter-Placeholder")
-                                        .resizable()
-                                        .frame(width: UIScreen.main.bounds.width / 4, height: UIScreen.main.bounds.width / 4, alignment: .trailing)
-                                    
+                                    ZStack {
+                                        Image("Small-Chracter-Placeholder")
+                                            .resizable()
+                                            .frame(width: UIScreen.main.bounds.width / 4, height: UIScreen.main.bounds.width / 4, alignment: .leading)
+                                        Image(entry.imageName)
+                                            .resizable()
+                                            .frame(width: UIScreen.main.bounds.width / 4, height: UIScreen.main.bounds.width / 4, alignment: .leading)
+                                    }
                                 }
                             }
                         }
@@ -54,8 +75,9 @@ struct QueueView: View {
                 ButtonStyle(text: "Start") {
                     coordinator.switchScreen(to: .game)
                         
-                }.disabled(state == .onePlayer || state == .noPlayer)
-                    .opacity((state == .onePlayer || state == .noPlayer ) ? 0.3 : 1)
+                }
+//                .disabled(state == .onePlayer || state == .noPlayer)
+//                    .opacity((state == .onePlayer || state == .noPlayer ) ? 0.3 : 1)
                 
             }.padding(.top, 78)
         }

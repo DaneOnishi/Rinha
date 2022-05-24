@@ -44,12 +44,32 @@ struct GameView: View {
                 
                 VStack {
                     HStack {
-                        Image("Score-Left")
-                            .resizable()
-                            .frame(width: 200, height: 115, alignment: .leading)
-                        Image("Score-Right")
-                            .resizable()
-                            .frame(width: 200, height: 115, alignment: .trailing)
+                        ZStack {
+                            Image("Score-Left")
+                                .resizable()
+                                .frame(width: 200, height: 115, alignment: .leading)
+                                .overlay(alignment: .center){
+                                    ImageOverlay(text: "0", textSize: 22)
+                                        .offset(x: 35, y:7)
+                                }
+                            Image(SessionManager.shared.player1.carouselImageSmall)
+                                .resizable()
+                                .frame(width: 100 ,height: 100, alignment: .leading)
+                                .offset(x: -40, y: 3)
+                        }
+                        ZStack {
+                            Image("Score-Right")
+                                .resizable()
+                                .frame(width: 200, height: 115, alignment: .trailing)
+                                .overlay(alignment: .center){
+                                    ImageOverlay(text: "0", textSize: 22)
+                                        .offset(x: -35, y:7)
+                                }
+                            Image(SessionManager.shared.player2.carouselImageSmall)
+                                .resizable()
+                                .frame(width: 100 ,height: 100, alignment: .leading)
+                                .offset(x: 40, y: 3)
+                        }
                         
                     }.padding(.top, 50)
                     Spacer()
@@ -62,7 +82,7 @@ struct GameView: View {
                             
                         HStack {
                             Button {
-                                SFXMusicSingleton.shared.playCharacterSound(character: SessionManager.shared.character ?? .fish)
+                                SFXMusicSingleton.shared.playCharacterSound(character: SessionManager.shared.playerCharacter ?? .rat)
                             } label: {
                                 Image("Cheer-Button")
                                     .resizable()
