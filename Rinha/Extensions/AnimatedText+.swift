@@ -71,12 +71,14 @@ public struct SimpleAnimatedText: View {
     @State var string: String
     var nextValue: String?
     var textModifier: (Text)->(Text)
+    var loop: Bool = false
     
-    public init(_ input: String, charDuration: Double, modifier: @escaping (Text)->(Text)) {
+    public init(_ input: String, charDuration: Double, loop: Bool = false, modifier: @escaping (Text)->(Text)) {
         
         self._string = State(initialValue: "")
         self.charDuration = charDuration
         self.textModifier = modifier
+        self.loop = loop
         
         self.nextValue = input
     }
