@@ -26,7 +26,11 @@ struct InformationView: View {
     
     var body: some View {
         ZStack {
+           
             Color("BackgroundColor")
+                .edgesIgnoringSafeArea(.all)
+            Image("Cloud-Background")
+                .resizable()
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -49,10 +53,6 @@ struct InformationView: View {
                           headspace: 120,
                           sidesScaling: 0.98) { name in
                     ZStack {
-                        Image("Small-Chracter-Circle")
-                            .resizable()
-                            .frame(width: 138, height: 138)
-                            .clipShape(Circle())
                         Image(name)
                             .resizable()
                             .scaledToFill()
@@ -76,6 +76,7 @@ struct InformationView: View {
                     Spacer()
                 }
             }
+            
         }
     }
 }
