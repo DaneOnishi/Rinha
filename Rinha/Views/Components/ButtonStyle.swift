@@ -15,6 +15,7 @@ struct ButtonStyle: View {
         Button(action: {
             print("Button pressed!")
             onPress?()
+            SFXMusicSingleton.shared.playPunchSound()
         }) {
             Image("Button")
                 .resizable()

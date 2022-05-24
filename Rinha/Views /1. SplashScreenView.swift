@@ -22,6 +22,7 @@ struct SplashScreenView: View {
         }
         .edgesIgnoringSafeArea([.top, .bottom])
         .onAppear {
+            SFXMusicSingleton.shared.playFireSound()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                 coordinator.switchScreen(to: .mainMenu)
             }

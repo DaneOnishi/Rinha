@@ -18,6 +18,10 @@ struct GameView: View {
     @State var isFanButtonEnabled = false
     @State var isMagnetButtonEnabled = false
     @State var isGoalButtonEnabled = false
+    var userList: [realTimeLeaderboardEntry] = [
+        realTimeLeaderboardEntry(position: 1, name: "Armando"),
+        realTimeLeaderboardEntry(position: 2, name: "Sasha")
+    ]
     
     @State var rectangleOpen = false
     
@@ -143,22 +147,12 @@ struct GameView: View {
                                     self.rectangleOpen.toggle()
                                 }
                             
-                            HStack(alignment: .top) {
-                                VStack(alignment: .trailing) {
-                                    Circle()
-                                        .frame(width: 48, height: 48, alignment: .center)
-                                        .foregroundColor(Color.red)
-                                    Circle()
-                                        .frame(width: 48, height: 48, alignment: .center)
-                                        .foregroundColor(Color.red)
-                                    Circle()
-                                        .frame(width: 48, height: 48, alignment: .center)
-                                        .foregroundColor(Color.blue)
-                                        
-                                }
-                            }
+                            VStack(alignment: .trailing) {
+                                                                ForEach(userList, id: \.id) { entry in
+                                                                    RealTimeLeaderboardCell(userInfo: entry)
+                                                                }                      }
                             .padding(.top, 70)
-                            .padding(.trailing, 30)
+                            .padding(.trailing, 20)
                             
                             
                         }

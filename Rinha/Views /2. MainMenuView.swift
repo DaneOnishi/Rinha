@@ -20,15 +20,28 @@ struct MainMenuView: View {
     var body: some View {
         ZStack {
             ZStack(alignment: .center) {
+                Color("BackgroundColor")
+                    .edgesIgnoringSafeArea(.all)
                 Image("Background-2")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
+                Image("Cream-Circle")
+                    .resizable()
+                    .frame(width: 300, height: 300, alignment: .center)
+                    .padding(.bottom, 200)
+                
                 
                 
                 VStack {
                     SpriteView(scene: DojoView.buildScene(actionPerformed: nil), options: [.allowsTransparency])
                         .background(Color.clear)
+    
                 }.padding(.bottom, 200)
+                
+                Image("BlackCircle")
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .padding(.top, 300)
                 
                 VStack {
                     Button {
@@ -51,7 +64,7 @@ struct MainMenuView: View {
                         Button {
                             coordinator.switchScreen(to: .leaderboard)
                         } label: {
-                            Image("Details-Button")
+                            Image("Leaderboard-Button")
                                 .resizable()
                                 .frame(width: 75, height: 75, alignment: .center)
                         }
@@ -78,6 +91,8 @@ struct MainMenuView: View {
                         
                     }.padding(-37)
                 }.padding(.top, 300)
+            }.onAppear{
+                SFXMusicSingleton.shared.playMenuMusic()
             }
         }
     }

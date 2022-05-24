@@ -25,7 +25,7 @@ class Coordinator: ObservableObject {
         case game
     }
     
-    @Published var currentScreen: Screen = .game
+    @Published var currentScreen: Screen = .splash
     
     var screenHistory: [Screen] = []
     

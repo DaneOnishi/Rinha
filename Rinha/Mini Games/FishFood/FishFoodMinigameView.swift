@@ -46,7 +46,7 @@ struct FishFoodMinigameView: View {
             VStack {
                 HStack(alignment: .top) {
                     Spacer()
-                    Image("foodPot")
+                    Image("fishFood")
                         .rotationEffect(Angle(degrees: 180))
 //                        .offset(y: -110)
                     Spacer()

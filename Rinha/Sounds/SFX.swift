@@ -112,6 +112,10 @@ class SFXMusicSingleton: NSObject, AVAudioPlayerDelegate {
         playSound(soundFileName: character.animalSound, loop: false)
     }
     
+    func playFireSound() {
+        playSound(soundFileName: "Fire-sOUND", loop: false)
+    }
+    
     func pauseMusic(soundFileName: String) {
         guard let bundle = Bundle.main.path(forResource: soundFileName, ofType: "mp3")
         else{ return }
