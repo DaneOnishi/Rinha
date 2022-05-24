@@ -25,7 +25,7 @@ struct TeamSelectionView: View {
                 
                 Spacer()
                 ButtonStyle(text: "Select", onPress: {
-                    coordinator.switchScreen(to: .game)
+                    coordinator.switchScreen(to: .queue)
                 })
                     .offset(y: -40)
                     .disabled(!isAnyButtonSelected)
@@ -46,14 +46,21 @@ struct TeamSelectionView: View {
             VStack {
                 Spacer()
                 Button(action: {
+                    SessionManager.shared.firstTeam.append(QueueItem(imageName: SessionManager.shared.playerCharacter!.carouselImageSmall, isActive: true))
                     print("Button pressed!")
                     isUpperButtonSelected.toggle()
                     isDownButtonSelected = false
                 }) {
-                    Image("Wood-Top")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 424, height: 270)
+                    ZStack {
+                        Image("Wood-Top")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 424, height: 270)
+                        Image("rat_upper_plank")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(height: 180)
+                    }
                 }
                 .clipShape(TopRectangleButtonShape())
                 .contentShape(TopRectangleButtonShape())
@@ -64,13 +71,21 @@ struct TeamSelectionView: View {
                 
                 Button(action: {
                     print("Button pressed!")
+                    SessionManager.shared.secondTeam.append(QueueItem(imageName: SessionManager.shared.playerCharacter!.carouselImageSmall, isActive: true))
                     isDownButtonSelected.toggle()
                     isUpperButtonSelected = false
                 }) {
+                    ZStack {
                     Image("Wood-Bottom")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 400, height: 250)
+                    Image("duck_under_plank")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 400, height: 250)
+                            .offset(x: 10, y: -40)
+                    }
                 }
                 .clipShape(BottomRectangleButtonShape())
                 .contentShape(BottomRectangleButtonShape())

@@ -28,15 +28,20 @@ struct __SetMatchView: View {
                     
               
                 .padding(10)
-                
-                Image("Circle")
-                    .resizable()
-                    .frame(width: 250, height: 225, alignment: .center)
-                    .padding()
-                
+                ZStack {
+                    Image("Circle")
+                        .resizable()
+                        .frame(width: 250, height: 225, alignment: .center)
+                        .padding()
+                    Image(SessionManager.shared.playerCharacter!.carouselImageSmall)
+                        .resizable()
+                        .frame(width: 200, height: 200, alignment: .center)
+                        .offset(y: 10)
+                }
                 
                     ButtonStyle(text: state.switchButtonTitle) {
-                        coordinator.switchScreen(to: .game)
+                        SessionManager.shared.player1 = SessionManager.shared.playerCharacter!
+                        coordinator.switchScreen(to: .queue)
                     }.disabled(state == .twoPlayer)
                     .opacity((state == .twoPlayer ) ? 0.3 : 1)
                     
@@ -48,7 +53,7 @@ struct __SetMatchView: View {
     }
 }
 
-struct __SetMatchView_Previews: PreviewProvider {
+struct SetMatchView_Previews: PreviewProvider {
     static var previews: some View {
         __SetMatchView(state: .noPlayer)
     }
@@ -63,10 +68,13 @@ enum MatchState {
     var switchTitle: String {
         switch self {
         case .noPlayer:
+            SessionManager.shared.matchState = .noPlayer
             return "There is no match happening right now"
         case .onePlayer:
+            SessionManager.shared.matchState = .onePlayer
             return "blob has started a match, what do you want to do?"
         case .twoPlayer:
+            SessionManager.shared.matchState = .twoPlayer
             return "blob vs. zlob is ready to start"
         default:
             return "Let's go garotas"

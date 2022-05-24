@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ACarousel
+import Lottie
 
 struct Item: Identifiable {
     let id = UUID()
@@ -15,10 +16,17 @@ struct Item: Identifiable {
 
 struct ChooseFighterView: View {
     let chars = Character.allCases.map { $0.carouselImageSmall }
+    let charsGif = Character.allCases.map { $0.characterGif }
+    
+    let allCharacters = Character.allCases
     
     @State var currentIndex: Int = 0
     
     @EnvironmentObject var coordinator: Coordinator
+    
+    var frameList : [String] = []
+    
+
     
     var body: some View {
         
@@ -32,10 +40,10 @@ struct ChooseFighterView: View {
                         .resizable()
                         .frame(width: 325, height: 325)
                         .clipShape(Circle())
-                    Image(chars[currentIndex])
-                        .resizable()
+
+                    GIFImage(name: charsGif[currentIndex])
+                        .frame(width: 350, height: 350)
                         .scaledToFill()
-                        .frame(width: 219, height: 219, alignment: .bottom)
                         .clipShape(Circle())
                         .offset(y: 19)
                 }
@@ -55,7 +63,7 @@ struct ChooseFighterView: View {
                         Image(name)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 87, height: 87, alignment: .bottom)
+                            .frame(width: 120, height: 120, alignment: .bottom)
                             .clipShape(Circle())
                             .offset(y: 7)
                     }
@@ -63,6 +71,7 @@ struct ChooseFighterView: View {
                 }
                 
                 ButtonStyle(text: "Choose") {
+                    SessionManager.shared.playerCharacter = allCharacters[currentIndex]
                     coordinator.switchScreen(to: .setMatch)
                 }
 
