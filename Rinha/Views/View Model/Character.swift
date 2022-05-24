@@ -9,20 +9,24 @@ import Foundation
 import SwiftUI
 
 enum Character: String, CaseIterable {
-    case rat = "rato1"
-    case llama = "rato4"
-    case redPanda = "rato5"
-    case duck = "rato3"
-    case fish = "rato2"
+    case rat = "rat"
+    case llama = "llama"
+    case redPanda = "redPanda"
+    case duck = "duck"
+//    case fish = "fish"
     
     var characterImage: String {
         //return "\(rawValue)"
         return "\(rawValue)_character_image"
     }
     
+    var characterGif: String {
+        //return "\(rawValue)"
+        return "\(rawValue)_gif"
+    }
+    
     var carouselImageSmall: String {
-        return "\(rawValue)"
-//        return "\(rawValue)_carousel_image_small"
+        return "\(rawValue)_carousel_image_small"
     }
     
     var carouselImageBig: String {
@@ -31,13 +35,11 @@ enum Character: String, CaseIterable {
     }
     
     var upperPlank: String {
-        return "\(rawValue)"
-//        return "\(rawValue)_upper_plank"
+        return "\(rawValue)_upper_plank"
     }
     
     var underPlank: String {
-        return "\(rawValue)"
-//        return "\(rawValue)_under_plank"
+        return "\(rawValue)_under_plank"
     }
     
     var scoreImage: String {
@@ -56,8 +58,13 @@ enum Character: String, CaseIterable {
     }
     
     var characterInfoImage: String {
-        return "\(rawValue)_character_info_image"
+        return "\(rawValue)_info"
     }
+    
+    var characterTagImage: String {
+        return "\(rawValue)_tag"
+    }
+    
     
     var animalSound: String {
         switch self {
@@ -69,8 +76,8 @@ enum Character: String, CaseIterable {
             return "Red-Panda-Sound"
         case .duck:
             return "Meerkat-Sound"
-        case .fish:
-            return "Fish-Sound"
+//        case .fish:
+//            return "Fish-Sound"
         }
     }
 }

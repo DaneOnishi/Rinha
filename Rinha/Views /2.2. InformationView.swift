@@ -11,8 +11,8 @@ import ACarousel
 
 struct InformationView: View {
     
-    let chars = Character.allCases
-    let charNames = Character.allCases.map { $0.carouselImageSmall }
+    let chars = Character.allCases.map { $0.characterInfoImage }
+    let charNames = Character.allCases.map { $0.characterTagImage }
     @State var currentIndex: Int = 0
     @EnvironmentObject var coordinator: Coordinator
     
@@ -31,36 +31,25 @@ struct InformationView: View {
             
             VStack {
                 ZStack {
-                    Image(chars[$currentIndex.wrappedValue].carouselImageSmall)
+                    Image(chars[$currentIndex.wrappedValue])
                         .resizable()
-                        .frame(width: 250, height: 250)
-//                    Image()
-//                        .resizable()
-//                        .scaledToFill()
-//                        .frame(width: 219, height: 219, alignment: .bottom)
-//                        .clipShape(Circle())
-//                        .offset(y: 19)
+                        .frame(width: 400, height: 400)
                 }
-                .padding(.top, 40)
+
                 
                 ACarousel(charNames,
                           id: \.self,
                           index: $currentIndex,
-                          headspace: 120,
+                          headspace: 45,
                           sidesScaling: 0.98) { name in
-                    ZStack {
-                        Image("Small-Chracter-Circle")
-                            .resizable()
-                            .frame(width: 138, height: 138)
-                            .clipShape(Circle())
+
                         Image(name)
                             .resizable()
+
                             .scaledToFill()
                             .frame(width: 87, height: 87, alignment: .bottom)
-                            .clipShape(Circle())
                             .offset(y: 7)
-                    }
-                    .frame(height: 138)
+
                 }
                 Spacer()
                     .frame(height: 60)

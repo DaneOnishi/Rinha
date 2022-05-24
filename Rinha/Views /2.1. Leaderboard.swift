@@ -48,15 +48,17 @@ struct SegmentedView : View {
                     switch actualView {
                     case .matchMaster:
                         MatchMasterView(userList: [
-                            LeaderboardEntry(user: "nana", points: 30, position: 4, state: "down.arrow"),
-                            LeaderboardEntry(user: "nono", points: 32, position: 1, state: "up.arrow")
+                            LeaderboardEntry(user: "nana", points: 30, position: 1, state: "down.arrow")
+                                ,
+                            LeaderboardEntry(user: "nono", points: 32, position: 2, state: "up.arrow")
                         ])
                             .frame(width: g.frame(in : .global).width)
+                            
                            
                     case .cheerUpGod:
-                        CheerUpGodView(userList: [
-                            LeaderboardEntry(user: "Ratatoing", points: 13, position: 1, state: "down.arrow"),
-                            LeaderboardEntry(user: "Blob", points: 12, position: 2, state: "up.arrow")
+                        MatchMasterView(userList: [
+                            LeaderboardEntry(user: "Glub", points: 33, position: 1, state: "down.arrow"),
+                            LeaderboardEntry(user: "Blob", points: 34, position: 2, state: "up.arrow")
                             ])
                             .frame(width: g.frame(in : .global).width)
                     }
@@ -79,7 +81,7 @@ struct AppBar2 : View {
             Rectangle()
                 .foregroundColor(.gray.opacity(0.1))
                 .cornerRadius(100)
-                .frame(width: UIScreen.main.bounds.width - 80, height: UIScreen.main.bounds.height / 17, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width - 100, height: UIScreen.main.bounds.height / 17, alignment: .center)
                 .padding(.top, 40)
             
             VStack(alignment: .center, content: {

@@ -21,6 +21,7 @@ class Coordinator: ObservableObject {
         case chooseFighter
         case setMatch
         case teamSelection
+        case queue
         case game
     }
     

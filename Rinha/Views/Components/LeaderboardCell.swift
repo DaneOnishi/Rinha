@@ -16,11 +16,10 @@ struct LeaderboardCell: View {
     
     let entry: LeaderboardEntry
     
-    
     var body: some View {
         ZStack(alignment: .leading) {
             Rectangle()
-                .frame(width: UIScreen.main.bounds.width - 60, height: 50, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width - 100, height: 50, alignment: .center)
                 .foregroundColor(Color("Rose"))
                 .cornerRadius(100)
             
@@ -47,7 +46,7 @@ struct LeaderboardCell: View {
                 
                 Text(entry.points.description + " points")
                     .foregroundColor(.white)
-                    .padding(.leading, 40)
+                    .padding(.trailing, 40)
                 
             }.padding(.horizontal)
         }.padding(.top, 15)

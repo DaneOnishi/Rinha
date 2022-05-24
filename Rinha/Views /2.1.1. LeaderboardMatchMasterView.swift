@@ -17,16 +17,16 @@ struct MatchMasterView: View {
                     HStack {
                         Image("Small-Chracter-Circle")
                             .resizable()
-                            .frame(width: 100, height: 100, alignment: .leading)
+                            .frame(width: 80, height: 80, alignment: .leading)
                             .padding(.leading, 40)
                         Image("Small-Chracter-Circle")
                             .resizable()
-                            .frame(width: 150, height: 150, alignment: .leading)
+                            .frame(width: 130, height: 130, alignment: .leading)
                             .padding(-10)
                         
                         Image("Small-Chracter-Circle")
                             .resizable()
-                            .frame(width: 100, height: 100, alignment: .leading)
+                            .frame(width: 80, height: 80, alignment: .leading)
                             .padding(.trailing, 40)
                     }.padding(.top, 32)
                     
