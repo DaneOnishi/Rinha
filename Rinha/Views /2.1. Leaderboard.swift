@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import AVFoundation
 
 struct Leaderboard: View {
    

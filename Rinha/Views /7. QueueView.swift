@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct QueueView: View {
     var sessionManager = SessionManager.shared

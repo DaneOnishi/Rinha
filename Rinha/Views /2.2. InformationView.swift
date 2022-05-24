@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ACarousel
+import AVFoundation
 
 
 struct InformationView: View {

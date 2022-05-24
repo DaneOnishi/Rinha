@@ -79,6 +79,8 @@ struct MainMenuView: View {
                     }.padding(-37)
                 }.padding(.top, 300)
             }
+        }.onAppear {
+           // SFXMusicSingleton.shared.playMenuMusic()
         }
     }
 }

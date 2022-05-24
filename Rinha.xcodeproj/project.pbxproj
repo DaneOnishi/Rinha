@@ -28,7 +28,13 @@
 		411EDC7A283BB339001A2EAC /* RealTimeLeaderboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC79283BB339001A2EAC /* RealTimeLeaderboardScene.swift */; };
 		411EDC7C283C05C4001A2EAC /* RealTimeLeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC7B283C05C4001A2EAC /* RealTimeLeaderboardEntry.swift */; };
 		411EDC7E283C0BEF001A2EAC /* RealTimeLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EDC7D283C0BEF001A2EAC /* RealTimeLeaderboardCell.swift */; };
+		412BB6F7283C7891007B4E32 /* Button-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 412BB6F6283C7891007B4E32 /* Button-Sound.mp3 */; };
+		412BB6F9283C78E7007B4E32 /* Sword-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 412BB6F8283C78E7007B4E32 /* Sword-Sound.mp3 */; };
+		412BB6FB283C791B007B4E32 /* Before-the-Fight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 412BB6FA283C791B007B4E32 /* Before-the-Fight.mp3 */; };
+		412BB6FD283C7937007B4E32 /* Eletronica-Punch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 412BB6FC283C7937007B4E32 /* Eletronica-Punch.mp3 */; };
 		4137A2282832D18600AEB704 /* 5. SetMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137A2272832D18600AEB704 /* 5. SetMatchView.swift */; };
+		414AB86F283C6F3E000B2423 /* Fireball-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 414AB86E283C6F3E000B2423 /* Fireball-Sound.mp3 */; };
+		414AB871283C6FD4000B2423 /* Fire-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 414AB870283C6FD4000B2423 /* Fire-Sound.mp3 */; };
 		417D57D2283689E100C32993 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 417D57D1283689E100C32993 /* Lottie */; };
 		417D57D428368A2400C32993 /* Fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 417D57D328368A2400C32993 /* Fire.json */; };
 		417D57D728368AAB00C32993 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D57D628368AAB00C32993 /* LottieView.swift */; };
@@ -94,7 +100,13 @@
 		411EDC79283BB339001A2EAC /* RealTimeLeaderboardScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeLeaderboardScene.swift; sourceTree = "<group>"; };
 		411EDC7B283C05C4001A2EAC /* RealTimeLeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeLeaderboardEntry.swift; sourceTree = "<group>"; };
 		411EDC7D283C0BEF001A2EAC /* RealTimeLeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeLeaderboardCell.swift; sourceTree = "<group>"; };
+		412BB6F6283C7891007B4E32 /* Button-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Button-Sound.mp3"; sourceTree = "<group>"; };
+		412BB6F8283C78E7007B4E32 /* Sword-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sword-Sound.mp3"; sourceTree = "<group>"; };
+		412BB6FA283C791B007B4E32 /* Before-the-Fight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Before-the-Fight.mp3"; sourceTree = "<group>"; };
+		412BB6FC283C7937007B4E32 /* Eletronica-Punch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Eletronica-Punch.mp3"; sourceTree = "<group>"; };
 		4137A2272832D18600AEB704 /* 5. SetMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. SetMatchView.swift"; sourceTree = "<group>"; };
+		414AB86E283C6F3E000B2423 /* Fireball-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fireball-Sound.mp3"; sourceTree = "<group>"; };
+		414AB870283C6FD4000B2423 /* Fire-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fire-Sound.mp3"; sourceTree = "<group>"; };
 		417D57D328368A2400C32993 /* Fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fire.json; sourceTree = "<group>"; };
 		417D57D628368AAB00C32993 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		4181F1DB2836DF3E009D1127 /* 8. GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8. GameView.swift"; sourceTree = "<group>"; };
@@ -248,6 +260,12 @@
 		41AEEE4E2829F8BE000921EA /* MP3 Files */ = {
 			isa = PBXGroup;
 			children = (
+				412BB6FC283C7937007B4E32 /* Eletronica-Punch.mp3 */,
+				412BB6FA283C791B007B4E32 /* Before-the-Fight.mp3 */,
+				412BB6F8283C78E7007B4E32 /* Sword-Sound.mp3 */,
+				412BB6F6283C7891007B4E32 /* Button-Sound.mp3 */,
+				414AB870283C6FD4000B2423 /* Fire-Sound.mp3 */,
+				414AB86E283C6F3E000B2423 /* Fireball-Sound.mp3 */,
 				41AEEE4C2829F836000921EA /* Main-Menu-Soundtrack.mp3 */,
 				41AEEE522829FBBA000921EA /* Fish-Sound.mp3 */,
 				41AEEE542829FBC3000921EA /* Meerkat-Sound.mp3 */,
@@ -388,13 +406,19 @@
 				41AEEE4D2829F836000921EA /* Main-Menu-Soundtrack.mp3 in Resources */,
 				41B0DA342833D84400F5A82C /* Doors.sks in Resources */,
 				411EDC74283AC7BB001A2EAC /* Fireworks.json in Resources */,
+				412BB6FD283C7937007B4E32 /* Eletronica-Punch.mp3 in Resources */,
 				41AEEE5B2829FBDD000921EA /* Cat-Sound.mp3 in Resources */,
 				41AEEE43282988F6000921EA /* Assets.xcassets in Resources */,
 				417D57D428368A2400C32993 /* Fire.json in Resources */,
+				414AB871283C6FD4000B2423 /* Fire-Sound.mp3 in Resources */,
 				41B0DA322833433C00F5A82C /* DojoScene.sks in Resources */,
 				41AEEE532829FBBA000921EA /* Fish-Sound.mp3 in Resources */,
+				414AB86F283C6F3E000B2423 /* Fireball-Sound.mp3 in Resources */,
+				412BB6F9283C78E7007B4E32 /* Sword-Sound.mp3 in Resources */,
 				41AEEE572829FBCC000921EA /* Llama-Sound.mp3 in Resources */,
 				411EDC70283AC23C001A2EAC /* Countdown.sks in Resources */,
+				412BB6F7283C7891007B4E32 /* Button-Sound.mp3 in Resources */,
+				412BB6FB283C791B007B4E32 /* Before-the-Fight.mp3 in Resources */,
 				41AEEE552829FBC3000921EA /* Meerkat-Sound.mp3 in Resources */,
 				411EDC78283BB30F001A2EAC /* RealTimeLeaderboard.sks in Resources */,
 				411EDC72283AC6A2001A2EAC /* Confetti.json in Resources */,

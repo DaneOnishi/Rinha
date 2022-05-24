@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ACarousel
+import AVFoundation
 
 struct Item: Identifiable {
     let id = UUID()
@@ -40,6 +41,7 @@ struct ChooseFighterView: View {
                         .offset(y: 19)
                 }
                 .padding(.top, 40)
+                    
                 
                 ACarousel(chars,
                           id: \.self,
@@ -60,6 +62,7 @@ struct ChooseFighterView: View {
                             .offset(y: 7)
                     }
                     .frame(height: 138)
+                    
                 }
                 
                 ButtonStyle(text: "Choose") {
@@ -75,11 +78,6 @@ struct ChooseFighterView: View {
             Background(text: "Choose your Fighter", textSize: 14)
             VStack{
                 Spacer()
-                HStack() {
-                    BackButton().frame(width: 50, height: 50)
-                        .offset(x: 17, y: 10)
-                    Spacer()
-                }
             }
         }
     }

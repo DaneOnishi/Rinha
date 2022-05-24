@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct __ConnectingTableView: View {
     @State var text: String = "..."

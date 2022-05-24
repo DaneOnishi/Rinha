@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct CheerUpGodView: View {
     var userList: [LeaderboardEntry]
     

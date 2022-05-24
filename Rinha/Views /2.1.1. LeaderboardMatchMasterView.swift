@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct MatchMasterView: View {
     var userList: [LeaderboardEntry]
     

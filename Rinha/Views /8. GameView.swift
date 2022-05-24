@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import SpriteKit
 import RealityKit
+import AVFoundation
 
 
 struct GameView: View {
